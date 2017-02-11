@@ -4,12 +4,15 @@
     display: inline-block;
     padding: $chip-padding;
     height: 50px;
+    color: $chip-text-color;
     font-size: $chip-font-size;
     line-height: $chip-line-height;
     border-radius: $chip-border-radius;
     background-color: $chip-background-color;
     @extend .z-depth-1;
     transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
 
     &:hover{
         @extend .z-depth-1-half;
@@ -24,6 +27,8 @@
         width: 50px;
         border-radius: 50%;
     }
+
+
 }
 
 .closebtn {

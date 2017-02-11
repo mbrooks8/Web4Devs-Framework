@@ -3,21 +3,21 @@ $user = true;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-		<title>Starter Template - Poverty</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Starter Template - Poverty</title>
 
-		<!-- CSS  -->
-		<link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<script src="./js/poverty.js" async></script>
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-		<style>
-			<?php
-			if($user)
-			{
-				echo ".editable
+        <!-- CSS  -->
+        <link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script src="./js/poverty.js" async></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+        <style>
+            <?php
+            if($user)
+            {
+                echo ".editable
         {
 
         }.editWrapper
