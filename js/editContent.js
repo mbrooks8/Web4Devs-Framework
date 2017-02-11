@@ -1,12 +1,21 @@
 //This file includes all the javascript for editing, and updating an editable element
 
-var editButton = "<a href='#' class='editButton'><div ><i style='margin-left:7px;margin-top:5px;' class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
+var editButton = "<a href='#' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
+var submit = "<a href='#' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
 /*adds the edit wrapper, as well as the edit button*/
 function addEditButton(elem)
 {
+    /*    var w = elem.width();
+    var h = elem.height();
     elem.wrap( "<div class='editWrapper'></div>" );
-    elem.parent( ".editWrapper" ).prepend(editButton);
-    elem.parent( ".editWrapper" ).children('.editButton').click(function(){
+    elem.parent( ".editWrapper" ).height(h+"px");
+    elem.parent( ".editWrapper" ).width(w+"px");
+    console.log("pWidth: "+elem.parent( ".editWrapper" ).width());
+    console.log("cWidth: "+elem.width());*/
+
+
+    elem.prepend(editButton);
+    elem.children('.editButton').click(function(){
         editWindow($("#"+elem[0].id));
     });
 }
@@ -24,11 +33,12 @@ function editWindow(elem)
             "content": '"'+str+'"'
         },
         success: function(data) {
-            var content = '<textarea  class="submitArea" style="width:100%"></textarea><a href="#" class="submitButton">submit</a>';
-            elem[0].innerHTML = content;
-            elem.find( ".submitArea" ).val(data);
+            elem.attr('contenteditable', 'true');
+            elem.find('.editButton').replaceWith(submit);
+            /*elem.find( ".submitArea" ).val(data);*/
             elem.find( ".submitButton" ).click(function(){
                 updateData($("#"+elem[0].id));
+                elem.html("")
             });
         },
         error: function(e) {
@@ -39,8 +49,9 @@ function editWindow(elem)
 /*upates the data on the database*/
 function updateData(elem)
 {
-
-    var str = elem.find( ".submitArea" ).val();
+    console.log("update data recieving: ")
+    console.log(elem[0]);
+    var str = elem[0].innerHTML;
     str = str.replace(/"/g, "'")
     console.log("updateData: "+str);
     $.ajax({
@@ -83,7 +94,7 @@ function getContentContent(elem)
 /*refreshes the content from the database after it is updated*/
 function refreshContent(elem)
 {
-    var str = elem.find( ".submitArea" ).val();
+    var str = elem[0].innerHTML;
     str = str.replace(/"/g, "'");
     $.ajax({
         url: './php/getContent.php',
@@ -95,9 +106,15 @@ function refreshContent(elem)
         success: function(data) {
             console.log(data);
             elem[0].innerHTML = data;
+            elem.attr('contenteditable', 'false');
+            elem.prepend(editButton);
+            elem.children('.editButton').click(function(){
+                editWindow($("#"+elem[0].id));
+            });
         },
         error: function(e) {
             alert("oops");
         }
     });
+
 }

@@ -22,7 +22,8 @@
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-color:$primary-color;
-	background-image: url(../img/cityviewbg.png);
+	background-image: $banner-image;
+	position:relative;
 
 	h1,h2,h3,h4,h5,h6,p,a{
 		margin:0;
@@ -67,10 +68,4 @@
 		background-size:150% auto !important;
 		min-height:40vh;
 	}
-}
-
-.valign{
-	display: flex;
-	align-items:center;
-	justify-content: center;
 }
