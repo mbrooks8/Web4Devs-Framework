@@ -124,9 +124,9 @@ $user = true;
 
 			<div class="banner valign">
 				<div class="container">
-					<p>The Center for <span class="secondary">information technology reserach</span><br class="hide-on-med-and-up"> in the intrest of <span class="secondary">society</span></p>
-					<h1>Citris<span style="color:white; word-spacing:0;"> • </span>UCMerced</h1>
-					<p>And the <span class="secondary">banatao institute</span></p>
+					<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
+					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>UCMerced</h1>
+					<p>Built <span class="secondary">For developers by developers</span></p>
 				</div>
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
@@ -134,8 +134,12 @@ $user = true;
 			<!--PROJECTS AND EVENTS-->
 			<div class="container">
 				<div class="section">
-					<h4 class="center">• CORE PROJECTS AND EVENTS •</h4>
-					<h5 class="primary center">The Center for Information Technology Research in the Interest of Society (CITRIS) and the Banatao Institute create technology solutions for society's most pressing challenges.</h5>
+					<h4 class="center">• CORE Features •</h4>
+					<p class="primary center"><!-- start slipsum code -->
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+
+<!-- end slipsum code --></p>
 					<br>
 					<div class="row">
 						<div class="col s12 m8 center">
