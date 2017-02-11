@@ -88,8 +88,8 @@ small { font-size: 75%; }
 @import "components/reset";
 // components;
 @import "components/banner";
-//@import "components/template";
-//@import "components/utility";
+@import "components/template";
+@import "components/utility";
 @import "components/sidenav";
 @import "components/navBar";
 @import "components/text";
