@@ -1,26 +1,37 @@
 .popuptext {
     visibility: hidden;
     width: 160px;
+/*
+	background-size: contain;
+*/
     background-color: #555;
     color: #fff;
+/*
+	align-content: center;
+*/
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+   /* padding: 8px 0;*/
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
+	padding: 5px;
 
     &:after{
         content: "";
         position: absolute;
+/*
+		align-content: center;
+*/
         top: 100%;
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
         border-color: #555 transparent transparent transparent;
+
     }
 
     /* Toggle this class - hide and show the popup */

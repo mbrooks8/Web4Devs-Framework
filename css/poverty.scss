@@ -117,6 +117,14 @@ $table-padding:8px !default;
 // ==========================================================================
 $banner-image:url(../img/cityviewbg.png);
 // ==========================================================================
+// Tooltip
+// ==========================================================================
+$tooltip-width: 120px;
+$tooltip-background-color: black;
+$tooltip-padding:5px 0;
+// ==========================================================================
+// ==========================================================================
+// ==========================================================================
 // ==========================================================================
 // Stolen reset scss;
 @import "components/reset";
@@ -132,3 +140,5 @@ $banner-image:url(../img/cityviewbg.png);
 @import "components/chip";
 @import "components/table";
 @import "components/waves";
+@import "components/popup";
+@import "components/tooltip";
