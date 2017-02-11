@@ -39,7 +39,6 @@ function editWindow(elem)
 /*upates the data on the database*/
 function updateData(elem)
 {
-
     var str = elem.find( ".submitArea" ).val();
     str = str.replace(/"/g, "'")
     console.log("updateData: "+str);
