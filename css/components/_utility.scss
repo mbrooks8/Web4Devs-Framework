@@ -1,0 +1,70 @@
+// color classes
+.secondary{
+	color:$secondary-color;
+}
+.accent{
+	color:$accent-color;
+}
+.primary{
+	color:$primary-color;
+}
+
+// Dividers
+
+.hr {
+  height: 1px;
+  overflow: hidden;
+  background-color: color("grey", "lighten-2");
+
+}
+
+/*hide scrolbar*/
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+	width: 0px;  /* remove scrollbar space */
+	background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+//Sticky Footer
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+content {
+	flex: 1;
+}
+
+/*Utility Classes*/
+
+.hide {
+	display: none !important;
+}
+
+// Text Align
+.left-align {
+	text-align: left;
+}
+.right-align {
+	text-align: right
+}
+.center, .center-align {
+	text-align: center;
+}
+
+.left {
+	float: left !important;
+}
+.right {
+	float: right !important;
+}

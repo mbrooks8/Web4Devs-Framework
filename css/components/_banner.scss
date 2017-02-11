@@ -1,0 +1,76 @@
+//SHitty banner
+
+.shittyAddBanner{
+	width:100%;
+	padding:30px;
+	border-radius:5px;
+	background-color:$primary-color;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+//main banner
+.banner{
+	padding:0px;
+	margin:0px;
+	min-height:80vh;
+	width:100%;
+	background-color:$primary-color;
+	background-size:100%;
+	background-position: center;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color:$primary-color;
+	background-image: url(../img/cityviewbg.png);
+
+	h1,h2,h3,h4,h5,h6,p,a{
+		margin:0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h1{
+		margin: 0;
+		letter-spacing: 5px;
+		padding: 7px 0 12px 0;
+		display: block;
+		font-weight: normal;
+		font-size: 5rem;
+		color: $accent-color;
+	}
+
+	p{
+		font-size: 20px;
+		color:#f3f0f5;
+	}
+
+	@media only screen and (max-width: $medium-screen) {
+		h1{
+			font-size: 4.5rem;
+		}
+
+		p{
+			font-size: 16px;
+		}
+		background-size:150% auto !important;
+		min-height:60vh;
+	}
+	@media only screen and (max-width: $small-screen) {
+		h1{
+			font-size: 2.5rem;
+		}
+
+		p{
+			font-size: 14px;
+		}
+		background-size:150% auto !important;
+		min-height:40vh;
+	}
+}
+
+.valign{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}

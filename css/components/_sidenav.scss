@@ -1,0 +1,72 @@
+.active
+{
+	.overlay
+	{
+		background-color: rgba(0,0,0,0.7);
+		pointer-events: auto;
+	}
+}
+
+.overlay
+{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	transition: background-color 0.5s ease;
+	z-index: -1;
+	pointer-events: none;
+
+}
+.sidebar
+{
+	transition: left 0.5s ease;
+	position: fixed;
+	height: 100vh;
+	width: $side-width;
+	left: -$side-width;
+	top:0;
+	z-index: 998;
+	display: flex;
+	flex-direction: column;
+	&.active
+	{
+		left: 0;
+	}
+}
+.sideHeader
+{
+	width:100%;
+	background-color: $accent-color;
+	min-height: 40px;
+	z-index: 1;
+	padding: 10px;
+}
+.sideBody
+{
+	flex: 2;
+	display: flex;
+	background-color: white;
+	z-index: 1;
+	overflow: auto;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	li a {
+		display: block;
+		color: #000;
+		padding: 8px 16px;
+		text-decoration: none;
+		transition: background-color 0.7s ease;
+		&:hover
+		{
+			background-color: #555;
+			color: white;
+		}
+	}
+}
+
