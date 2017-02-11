@@ -1,8 +1,12 @@
 <?php
-function convertFromHtml(&$html)
-{
+
+function convertFromHtml(&$html) {
 	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));
-	$html = preg_replace('/(?!<[a-zA-Z=\"\':; ]*[^ ]>|<\\/[a-zA-Z="\':; ]*>)(<)/', "&lt;", $html);
+	$tags = array("</li><li>","<li>",'</li>');
+	$tagreplace = array("\n-","-","\n");
+	$html = str_replace($tags, $tagreplace, $html);
+
+
 }
 function convertToHtml(&$html)
 {
