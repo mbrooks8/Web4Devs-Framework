@@ -112,7 +112,7 @@ $user = true;
 					<li><a href="#!">SEED Grants</a></li>
 					<li><a href="#!">PEOPLE</a></li>
 					<li><a href="#!">NEWS</a></li>
-					<li><a href="#!">DONATE</a></li>
+					<li><a href="#!" class="navbutton">DONATE</a></li>
 					<li><a href="#!">SEARCH</a></li>
 				</ul>
 
@@ -128,6 +128,7 @@ $user = true;
 					<h1>Citris<span style="color:white; word-spacing:0;"> • </span>UCMerced</h1>
 					<p>And the <span class="secondary">banatao institute</span></p>
 				</div>
+				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
 
 			<!--PROJECTS AND EVENTS-->
@@ -237,6 +238,7 @@ $user = true;
 					pointer-events: none;
 					overflow: none;
 					width:100%;
+					z-index:-1;
 				}
 				.imgSectionText{
 					height:100%;
@@ -303,7 +305,7 @@ $user = true;
 
 					<h4 class="center">• Donate to CITRIS •</h4>
 					<p>Whether you're looking to support our <a>ongoing projects</a> or become a <a>sponsor of the 2016 Mobile App Challenge</a>, we're always looking for your support. We accept contributions through the UC Merced Giving website. Tap the button below to continue.</p>
-
+<a type="button" class="button raised center">Donate</a>
 				</div>
 
 

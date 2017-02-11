@@ -1,81 +1,81 @@
 nav {
-    height:$nav-height;
-    background-color:$nav-color;
-    width: 100%;
-    line-height: $nav-height;
-padding-left:20px;
+	height:$nav-height;
+	background-color:$nav-color;
+	width: 100%;
+	line-height: $nav-height;
+	padding-left:20px;
 	padding-right:20px;
-    //Logo
-    .logo{
-        position:absolute;
-        color: $nav-text-color;
-        display: inline-block;
-        padding: 0;
-        height:$nav-height;
-        white-space: nowrap;
-        font-size:$nav-logo-text-size;
+	//Logo
+	.logo{
+		position:absolute;
+		color: $nav-text-color;
+		display: inline-block;
+		padding: 0;
+		height:$nav-height;
+		white-space: nowrap;
+		font-size:$nav-logo-text-size;
 
-        &.center {
-            left: 50%;
-            transform: translateX(-50%);
-        }
+		&.center {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 
-        @media #{$medium-and-down} {
-            left: 50%;
-            transform: translateX(-50%);
+		@media #{$medium-and-down} {
+			left: 50%;
+			transform: translateX(-50%);
 
-            &.left, &.right {
-                padding: 0;
-                transform: none;
-            }
+			&.left, &.right {
+				padding: 0;
+				transform: none;
+			}
 
-            &.left { left: 0.5rem; }
-            &.right {
-                right: 0.5rem;
-                left: auto;
-            }
-        }
+			&.left { left: 0.5rem; }
+			&.right {
+				right: 0.5rem;
+				left: auto;
+			}
+		}
 
-        &.right {
-            right: 0.5rem;
-            padding: 0;
-        }
-    }
-    ul{
-        margin:0px;
-        float:right;
+		&.right {
+			right: 0.5rem;
+			padding: 0;
+		}
+	}
+	ul{
+		margin:0px;
+		float:right;
 
-        li{
-list-style-type: none;
-            transition: background-color .3s;
-            float: left;
-            padding: 0;
+		li{
+			list-style-type: none;
+			transition: background-color .3s;
+			float: left;
+			padding: 0;
 
-            &.active {
-                background-color: rgba(0,0,0,.1);
-            }
-        }
-        a {
-            transition: background-color .3s;
-            font-size: $nav-text-size;
-            color: $nav-text-color;
-            display: block;
-            padding: 0 15px;
-            cursor: pointer;
+			&.active {
+				background-color: rgba(0,0,0,.1);
+			}
+		}
+		a {
+			transition: background-color .3s;
+			font-size: $nav-text-size;
+			color: $nav-text-color;
+			display: block;
+			padding: 0 15px;
+			cursor: pointer;
 
-            &:hover {
-                background-color: rgba(0,0,0,.1);
-            }
-        }
+			&:hover {
+				background-color: rgba(0,0,0,.1);
+			}
+		}
 
-        &.left {
-            float: left;
-        }
+		&.left {
+			float: left;
+		}
 
-    }
-    &.fixed{
-        position: fixed;
-        top:0px;
+	}
+	&.fixed{
+		position: fixed;
+		top:0px;
 
-    }
+	}
 }
