@@ -10,6 +10,12 @@
 		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+		<style>
+			body
+			{
+				padding: 5% 10%;
+			}
+		</style>
 		<?php
 		$user = true;
 		?>
@@ -24,7 +30,14 @@
 
 
 	<body>
-		<div class="card editable" id="adsfasdf">
+		<div class="row">
+		<div class="col m2 editable" id="column">hi</div>
+		<div class="col m2">hello</div>
+		<div class="col m2">test</div>
+		<div class="col m2">boop</div>
+		</div>
+
+		<div class="card editable" spellcheck="true" id="adsfasdf">
 		</div>
 		<ul class="editable" id="asd">
 		</ul>

@@ -1,4 +1,4 @@
-.editWrapper
+/*.editWrapper
 {
     min-height:10px;
     margin-top:20px;
@@ -7,8 +7,23 @@
     border:solid 1px lightgray;
     border-radius: 5px;
 
+}*/
+.editButton
+{
+    position: absolute !important;
+    top: -13px !important;
+    right: 20px !important;
+    height: 26px !important;
+    width: 26px !important;
+    background: white !important;
+    border-radius: 50% !important;
+    box-shadow: 0px 0px 5px 1px #5F5F5F !important;
 }
-.editButton, .addTemplateButton
+.editButton div
+{
+   height: auto;
+}
+.submitButton
 {
     position: absolute;
     top: -13px;
@@ -19,17 +34,13 @@
     border-radius: 50%;
     box-shadow: 0px 0px 5px 1px #5F5F5F;
 }
-.editableTemplate
+
+.editable
 {
-    min-height:10px;
-    margin-top:20px;
-    padding: 5px 10px;
     position:relative;
-    border:solid 1px lightgray;
-    border-radius: 5px;
 }
-.submitArea
+
+.editable[contenteditable="true"]
 {
-/*    min-height: 200px;*/
-    max-width: 100%;
+    border:solid 2px red;
 }
