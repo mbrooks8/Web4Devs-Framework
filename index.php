@@ -104,7 +104,7 @@ $user = true;
 			</style>
 
 			<nav class="fixed navbar">
-				<a href="#" class="logo sideToggle"><img src="http://citris.ucmerced.edu/sites/all/themes/citris_ucmerced/graphics/newCitrisLogo.png" style="height:64px;"></a>
+				<a href="#" class="logo sideToggle"><img src="http://1.bp.blogspot.com/-ata3-fQGA1M/UUxnSdNHqAI/AAAAAAAAAFI/Kb0gJs4YY_k/s1600/4.png" ></a>
 				<!--<img src="/assets/hamburger.svg" alt="Kiwi standing on oval">-->
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#!">PROJECTS</a></li>
@@ -116,8 +116,8 @@ $user = true;
 					<li><a href="#!">SEARCH</a></li>
 				</ul>
 
-				<ul class="right hide-on-med-and-up">
-					<li><a href="#" class="sideToggle">Menu</a></li>
+				<ul class="right hide-on-large-only">
+					<li><a href="#" class="sideToggle"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 				</ul>
 
 			</nav>
@@ -125,7 +125,7 @@ $user = true;
 			<div class="banner valign">
 				<div class="container">
 					<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
-					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>UCMerced</h1>
+					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Mrcd</h1>
 					<p>Built <span class="secondary">For developers by developers</span></p>
 				</div>
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
@@ -225,7 +225,7 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 							<div class="col s8">
 								<h4 class="white-text">Learn about our<br><span class="secondary">Seed Grant Projects</span></h4>
 							</div>
-							<div class="col s2">Button</div>
+							<div class="button raised">Button</div>
 						</div>
 					</div>
 				</div>

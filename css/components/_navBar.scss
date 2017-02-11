@@ -16,6 +16,12 @@ nav {
 		white-space: nowrap;
 		font-size:$nav-logo-text-size;
 
+		img{
+			max-height:$nav-height;
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+
 		&.center {
 			left: 50%;
 			transform: translateX(-50%);
