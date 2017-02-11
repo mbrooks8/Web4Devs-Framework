@@ -1,0 +1,40 @@
+.chip{
+    /*background-color:aqua;
+    border-radius:17px;*/
+    display: inline-block;
+    padding: $chip-padding;
+    height: 50px;
+    font-size: $chip-font-size;
+    line-height: $chip-line-height;
+    border-radius: $chip-border-radius;
+    background-color: $chip-background-color;
+    @extend .z-depth-1;
+    transition: all 0.2s ease;
+
+    &:hover{
+        @extend .z-depth-1-half;
+    }
+    &:hover .closebtn{
+        color: #000;
+    }
+    img{
+        float: left;
+        margin: 0 10px 0 -25px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+.closebtn {
+    padding-left: $closebtn-padding-left;
+    color: #888;
+    font-weight: $closebtn-font-weight;
+    float: $closebtn-float;
+    font-size: $closebtn-font-size;
+    cursor: pointer;
+
+    &hover{
+        color: #000;
+    }
+}
