@@ -97,6 +97,14 @@ $closebtn-font-size:1.1rem;
 $closebtn-float:right;
 $closebtn-padding-left:10px;
 // ==========================================================================
+// Table
+// ==========================================================================
+$table-border-collapse: collapse;
+$table-width: 50%;
+$table-border-bottom: 1px solid #ddd;
+$table-text-align: left;
+$table-padding:8px;
+// ==========================================================================
 // ==========================================================================
 // ==========================================================================
 // ==========================================================================
@@ -112,4 +120,4 @@ $closebtn-padding-left:10px;
 @import "components/card";
 @import "components/button";
 @import "components/chip";
-
+@import "components/table"
