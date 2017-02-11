@@ -78,12 +78,13 @@ $side-width:245px;
 //Button
 // ==========================================================================
 $button-border: none !default;
-$button-background-color:$secondary-color;
-$button-background-color-hover:lighten($button-background-color, 5%);
+$button-background-color:$secondary-color !default;
+$button-background-color-hover:lighten($button-background-color, 5%) !default;
 $button-font-size: 1.3rem !default;
 $button-height: 36px !default;
 $button-padding: .3rem 2rem !default;
 $button-radius: 2px !default;
+$button-large-height: 50px !default;
 // ==========================================================================
 // Chip
 // ==========================================================================
