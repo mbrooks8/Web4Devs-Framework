@@ -85,6 +85,18 @@ $button-height: 36px !default;
 $button-padding: .3rem 2rem !default;
 $button-radius: 2px !default;
 // ==========================================================================
+// Chip
+// ==========================================================================
+$chip-padding: 0 25px;
+$chip-font-size:16px;
+$chip-line-height:50px;
+$chip-border-radius:25px;
+$chip-background-color: #f1f1f1;
+$closebtn-font-weight:bold;
+$closebtn-font-size:1.1rem;
+$closebtn-float:right;
+$closebtn-padding-left:10px;
+// ==========================================================================
 // ==========================================================================
 // ==========================================================================
 // ==========================================================================
@@ -99,4 +111,5 @@ $button-radius: 2px !default;
 @import "components/text";
 @import "components/card";
 @import "components/button";
+@import "components/chip";
 
