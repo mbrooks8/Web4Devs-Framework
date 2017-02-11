@@ -1,3 +1,24 @@
-.btn{
+.button {
+	border: none;
+	display: inline-block;
+	text-transform:uppercase;
+	vertical-align:middle;
+	background-color: $button-background-color;
+	font-size: $button-font-size;
+	border-radius: $button-radius;
+    height:$button-height;
+	color: #ffffff;
+	padding: $button-padding;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	@extend .z-depth-1;
+	transition: all 0.2s ease;
+	margin:.5rem .5rem;
+
+	&:hover{
+		@extend .z-depth-1-half;
+		background-color: $button-background-color-hover;
+	}
 
 }

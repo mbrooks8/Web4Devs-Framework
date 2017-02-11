@@ -73,13 +73,17 @@ $nav-logo-text-size: 2.1rem !default;
 // ==========================================================================
 $side-width:245px;
 // ==========================================================================
-em { font-style: italic; }
-strong { font-weight: 500; }
-small { font-size: 75%; }
-.light { font-weight: 300; }
-.thin { font-weight: 200; }
+
 // ==========================================================================
+//Button
 // ==========================================================================
+$button-border: none !default;
+$button-background-color:$secondary-color;
+$button-background-color-hover:lighten($button-background-color, 5%);
+$button-font-size: 1.3rem !default;
+$button-height: 36px !default;
+$button-padding: .3rem 2rem !default;
+$button-radius: 2px !default;
 // ==========================================================================
 // ==========================================================================
 // ==========================================================================
@@ -94,4 +98,5 @@ small { font-size: 75%; }
 @import "components/navBar";
 @import "components/text";
 @import "components/card";
+@import "components/button";
 

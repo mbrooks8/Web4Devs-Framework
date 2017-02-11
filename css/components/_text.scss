@@ -81,3 +81,7 @@ small { font-size: 75%; }
 	font-family: "robotoLight";
 	src: url("#{$roboto-font-path}Roboto-Light.ttf") format("truetype");
 }
+@font-face {
+	font-family: "robotoMedium";
+	src: url("#{$roboto-font-path}Roboto-Medium.ttf") format("truetype");
+}
