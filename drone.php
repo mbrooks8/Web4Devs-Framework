@@ -127,17 +127,31 @@ $user = true;
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
 
-<div class="container">
-			<div class="section">
-	<div class="row">
-				<div class="col s12 m4">
-		<img class="responsive-img" src="http://blog.dronetrest.com/content/images/2016/05/helipal-com-storm-racing-drone-f1.jpg">
-		</div>
-		<div class="col s12 m8">
-		FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.
-		</div>
+			<div class="container">
+				<div class="section">
+					<div class="row">
+						<h4 class="center">• FPV Racing •</h4>
+
+						<h5 class="primary center">
+							FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
+						<br>
+
+						<div class="col s12 m4">
+							<img class="responsive-img" src="http://blog.dronetrest.com/content/images/2016/05/helipal-com-storm-racing-drone-f1.jpg">
+						</div>
+
+						<div class="col s12 m8">
+							FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.
+						</div>
+					</div>
 				</div>
-	</div>
+			</div>
+
+			<div class="valign imgSection">
+				<img src="http://blog.dronetrest.com/content/images/2016/05/helipal-com-storm-racing-drone-f1.jpg">
+				<div>
+					<h1 class="white-text">Drone Love Forever</h1>
+				</div>
 			</div>
 			<!--PROJECTS AND EVENTS-->
 			<div class="container">
