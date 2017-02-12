@@ -10,53 +10,16 @@
 		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-		<style>
-			<?php
-			if($user)
-			{
-				echo ".editable
-        {
-
-        }.editWrapper
-        {
-            min-height:10px;
-            margin-top:20px;
-            padding: 5px 10px;
-            position:relative;
-            border:solid 1px lightgray;
-            border-radius: 5px;
-			z-index:-1;
-        }
-        .editButton, .addTemplateButton
-        {
-            position: absolute;
-            top: -13px;
-            right: 20px;
-            height: 26px;
-            width: 26px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0px 0px 5px 1px #5F5F5F;
-        }
-        .editableTemplate
-        {
-            min-height:10px;
-            margin-top:20px;
-            padding: 5px 10px;
-            position:relative;
-            border:solid 1px lightgray;
-            border-radius: 5px;
-        }
-                .submitArea
-        {
-            min-height: 200px;
-            max-width: 100%;
-        }
-        ";
-			}
-			?>
-
-		</style>
+		<?php
+		$user = true;
+		?>
+		<?php
+		if($user)
+		{
+			echo '<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
+			echo '<script src="./js/editContent.js"></script>';
+		}
+		?>
 	</head>
 
 	<body class="Site">
@@ -125,10 +88,31 @@
 					to { -o-transform: rotate(360deg) ; }
 				}
 
+				#layer1 {
+					-webkit-animation: bob 1.3s infinite  ease-in-out;
+					-moz-animation: bob 1.3s infinite  ease-in-out;
+					-o-animation: bob 1.3s infinite ease-in-out;
+					animation-direction: alternate;
+				}
+
+				@-webkit-keyframes bob {
+					from { -webkit-transform: scale(1) ;}
+					to { -webkit-transform: scale(.95) ; }
+				}
+				@-moz-keyframes bob {
+					from { -moz-transform: scale(1); }
+					to { -moz-transform: scale(.95); }
+				}
+				@-o-keyframes bob {
+					from { -o-transform: scale(1) ; }
+					to { -o-transform: scale(.95) ; }
+				}
+
+
 			</style>
 
 			<nav class="fixed navbar">
-				<a href="index.php" class="logo" style="height:64px;">
+				<a href="#!" class="logo" style="height:64px;">
 					<?php include("drawingTest.html"); ?>
 
 				</a>

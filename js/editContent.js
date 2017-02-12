@@ -1,7 +1,7 @@
 //This file includes all the javascript for editing, and updating an editable element
 
-var editButton = "<a href='#'contenteditable='true' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
-var submit = "<a href='#'contenteditable='true' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
+var editButton = "<a href='#'contenteditable='false' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
+var submit = "<a href='#'contenteditable='false' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
 /*adds the edit wrapper, as well as the edit button*/
 function addEditButton(elem)
 {
@@ -37,7 +37,7 @@ function editWindow(elem)
             elem.on('keydown',function(e){
                 if(e.which == 8 || e.which ==46){
 
-                    if(this.innerHTML.slice( 0,-1) == '<a href="#" contenteditable="true" class="submitButton"><div><i class="fa fa-check" aria-hidden="true"></i></div></a>')
+                    if(this.innerHTML.slice( 0,-1) == '<a href="#" contenteditable="false" class="submitButton"><div><i class="fa fa-check" aria-hidden="true"></i></div></a>')
                     {
                         //e.preventDefault();
                         text = '+';
@@ -72,7 +72,8 @@ function editWindow(elem)
                     }
                 }
                 console.log(this.innerHTML);
-            })
+            });
+            console.log("adding submit");
             elem.find('.editButton').replaceWith(submit);
             /*elem.find( ".submitArea" ).val(data);*/
             elem.find( ".submitButton" ).click(function(){
@@ -90,6 +91,7 @@ function updateData(elem)
 {
     console.log("update data recieving: ")
     console.log(elem[0]);
+    elem.find('.submitButton').remove();
     var str = elem[0].innerHTML;
     str = str.replace(/"/g, "'")
     console.log("updateData: "+str);
@@ -135,6 +137,7 @@ function refreshContent(elem)
 {
     var str = elem[0].innerHTML;
     str = str.replace(/"/g, "'");
+    elem.find('.submitButton').remove();
     $.ajax({
         url: './php/getContent.php',
         type: 'GET',

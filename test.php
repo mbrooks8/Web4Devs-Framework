@@ -39,10 +39,10 @@
 
 
 		<div class="row">
-		<div class="col m2 editable" id="column">hi</div>
-		<div class="col m2">hello</div>
-		<div class="col m2">test</div>
-		<div class="col m2">boop</div>
+			<div class="col m2 editable" id="column">hi</div>
+			<div class="col m2 editable">hello</div>
+			<div class="col m2">test</div>
+			<div class="col m2">boop</div>
 		</div>
 
 		<div class="card editable" spellcheck="true" id="adsfasdf">
@@ -68,9 +68,7 @@
 	<script>
 		$(".sideToggle").click(function(){
 			$(".sidebar").toggleClass("active");
-		})
-	</script>
-	<script>
+		});
 		/*Select all editable elements, and refresh the content from the database*/
 
 		var editableLists = $("ul.editable,ol.editable");
@@ -117,7 +115,11 @@
 				success: function(data) {
 					var out = data;
 					elem[0].innerHTML = out;
-					addEditButton(elem);
+					<?php
+					if($user==true){
+						echo "addEditButton(elem);";
+					}
+					?>
 				},
 				error: function(e) {
 					alert("oops");
