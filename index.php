@@ -232,30 +232,12 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 			</div>
 
 
-			<style>
-				.imgSection{
-					background-size: cover;
-					background-position: center;
-					background-attachment:scroll;
-					min-height:75vh;
-					background-color:black;
-					pointer-events: none;
-					overflow: none;
-					width:100%;
-					z-index:-1;
-				}
-				.imgSectionText{
-					height:100%;
-					Width:100%;
-				}
-				.background1{
-					background-image: url(http://www.ucmercedbobcats.com/images/2012-13/DSC_4556-Edit.jpg);
-				}
-			</style>
 
 
-			<div class="imgSection background1 valign">
-				<div class="imgSectionText center">
+
+			<div class="valign imgSection">
+				<img src="img/filler3.jpg">
+				<div>
 					<h1 class="white-text">More Words</h1>
 				</div>
 			</div>
