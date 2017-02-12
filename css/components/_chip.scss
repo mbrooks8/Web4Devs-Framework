@@ -3,7 +3,7 @@
     border-radius:17px;*/
     display: inline-block;
     padding: $chip-padding;
-    height: 50px;
+    height: 5%;
     color: $chip-text-color;
     font-size: $chip-font-size;
     line-height: $chip-line-height;
@@ -11,8 +11,10 @@
     background-color: $chip-background-color;
     @extend .z-depth-1;
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: $chip-cursor;
     position: relative;
+	min-height: 20px;
+
 
     &:hover{
         @extend .z-depth-1-half;
