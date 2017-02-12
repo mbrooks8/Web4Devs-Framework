@@ -118,11 +118,14 @@ $user = true;
 
 			</nav>
 
-			<div class="banner valign">
-				<div class="container">
-					<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
-					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Mrcd</h1>
-					<p>Built <span class="secondary">For developers by developers</span></p>
+			<div class="banner">
+				<div class="imgDiv valign">
+					<img src="http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg">
+					<div class="container">
+						<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
+						<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Mrcd</h1>
+						<p>Built <span class="secondary">For developers by developers</span></p>
+					</div>
 				</div>
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
