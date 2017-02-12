@@ -40,10 +40,8 @@ if($user)
 }
 ?>
 <script>
-		$(".sideToggle").click(function(){
-			$(".sidebar").toggleClass("active");
-		});
 		/*Select all editable elements, and refresh the content from the database*/
+	console.log("making edits");
 		var editables = $("h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
 		editables.each(function(){
 			console.log("test");
@@ -64,7 +62,7 @@ if($user)
 					elem[0].innerHTML = out;
 					elem.find('.submitButton').remove();
 					<?php
-					if($user==true){
+					if(isset($_SESSION["username"])){
 						echo "addEditButton(elem);";
 					}
 					?>

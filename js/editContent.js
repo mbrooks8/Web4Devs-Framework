@@ -1,7 +1,7 @@
 //This file includes all the javascript for editing, and updating an editable element
 
-var editButton = "<a href='#'contenteditable='false' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
-var submit = "<a href='#'contenteditable='false' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
+var editButton = "<a href='#!'contenteditable='false' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
+var submit = "<a href='#!'contenteditable='false' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
 /*adds the edit wrapper, as well as the edit button*/
 function addEditButton(elem)
 {

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,26 +13,33 @@
 		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+
 		<?php
-		$user = true;
-		?>
-		<?php
-		if($user)
+		if(isset($_SESSION['username']))
 		{
 			echo '<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
-			echo '<script src="./js/editContent.js"></script>';
-		}
-		?>
-	</head>
 
+		}
+
+		?>
+		<script src="./js/editContent.js"></script>
+	</head>
 	<body class="Site">
 		<div class="Site-content content">
 			<div class="sidebar" id="side">
 				<div class="overlay sideToggle"></div>
 				<div class="sideHeader" style="text-align:center;">
-					<img  style="width:60%; margin:auto;display:block"src="http://www.accrinet.com/images/3030_orig.png">
+					<img  style="width:60%; margin:auto;display:block"src="img/sloth.jpg">
 					<br>
-					<span >Welcome: userName</span>
+					<span >Welcome:
+						<?php
+						if(isset($_SESSION['username']))
+						{
+							echo $_SESSION['username'];
+						}
+						?>
+						<a class="button raised" href="logout.php">logout</a>
+					</span>
 				</div>
 				<div class="sideBody">
 					<ul class="sideToggle">
@@ -112,7 +122,17 @@
 			</style>
 
 			<nav class="fixed navbar">
-				<a href="#!" class="logo" style="height:64px;">
+				<a href="#!"
+				   <?php
+				   if(isset($_SESSION['username']))
+				   {
+					   echo'class="logo sideToggle"';
+				   }else
+				   {
+					   echo'class="logo"';
+				   }
+				   ?>
+				   class="logo" style="height:64px;">
 					<?php include("drawingTest.html"); ?>
 
 				</a>
@@ -123,8 +143,14 @@
 					<li><a href="#!">SEARCH</a></li>
 				</ul>
 
-				<ul class="right hide-on-large-only">
+				<?php
+				if(isset($_SESSION['username']))
+				{
+					echo'<ul class="right hide-on-large-only">
 					<li><a href="#" class="sideToggle"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-				</ul>
+				</ul>';
+				}
+				?>
+
 
 			</nav>

@@ -194,11 +194,11 @@ include("topNav.php");
 		<h5 class="primary center">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
-		<p class="editable" id="testForMichael">After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
+		<p>After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
 		</p>
 		<br>
 		<p>Participate in online discussion of fpv news, ask questions or just chit chat on fpv focused communities. Online fpv retailer Forever FPV, has their own online forum in addition to their store. Other FPV online communities are include the FPV Drone Quadcopters Facebook page. For FPV racing events all over the United States follow FPV Racing Events.
 		</p>
 	</div>
 </div>
-<?php include("botNav.php") ?>
+<?php include("botNav.php"); ?>

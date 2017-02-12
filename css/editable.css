@@ -10,7 +10,7 @@ border-radius: 5px;
 }*/
 .editButton,.submitButton
 {
-
+	font-size:18px;
 	position: absolute !important;
 	top: -13px !important;
 	right: 20px !important;
