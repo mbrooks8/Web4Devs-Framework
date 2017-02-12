@@ -120,9 +120,9 @@ $user = true;
 
 			<div class="banner valign">
 				<div class="container">
-					<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
+					<p><span class="secondary">Revolutionizing</span> Sports and Technology</p>
 					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Drone</h1>
-					<p>Built <span class="secondary">For developers by developers</span></p>
+					<p>Bringing <span class="secondary">Skill and Precision</span> to The<span class="secondary"> Next Level</span></p>
 				</div>
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
