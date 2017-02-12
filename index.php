@@ -309,7 +309,7 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 
 					<h4 class="center">• Donate to CITRIS •</h4>
 					<p>Whether you're looking to support our <a>ongoing projects</a> or become a <a>sponsor of the 2016 Mobile App Challenge</a>, we're always looking for your support. We accept contributions through the UC Merced Giving website. Tap the button below to continue.</p>
-<a type="button" class="button raised center">Donate</a>
+<a type="button" class="button raised">Donate</a>
 				</div>
 
 
