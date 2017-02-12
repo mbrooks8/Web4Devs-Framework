@@ -41,7 +41,7 @@ include("topNav.php");
 				<div class="col s8">
 					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Poor</span></h4>
 				</div>
-				<div class="button raised">Please</div>
+				<div class="button raised"><a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please</a></div>
 			</div>
 		</div>
 
@@ -120,7 +120,7 @@ include("topNav.php");
 		<h5 class="primary center">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
-		<p>If you like building things, then taking the DIY approach to your first drone is great. For some drone racers, building the quad is half the fun.  In addition to being to have your custom drone look exactly as you want, the other advantage of building your own quad is that you'll have the knowledge and skills to fix it when you crash. The parts pictured below are available at https://www.foreverfpv.com/.
+		<p>If you like building things, then taking the DIY approach to your first drone is great. For some drone racers, building the quad is half the fun.  In addition to being to have your custom drone look exactly as you want, the other advantage of building your own quad is that you'll have the knowledge and skills to fix it when you crash. The parts pictured below are available at <a href="https://www.foreverfpv.com/"> ForeverFPV</a>.
 
 			<!-- end slipsum code --></p>
 		<br>
@@ -136,20 +136,24 @@ include("topNav.php");
 			</div>
 
 			<div class="col s12 m4 center">
-				<div class="imgcard">
-					<img src="http://gettbs.in/image/cache/catalog/motor/LUM7-500x500.jpg
-							  " class="responsive-img">
-					<p>Lumenier RX2206-11 2350Kv
-					</p>
-				</div>
+				<a href="https://www.foreverfpv.com/product/lumenier-rx2206-11-2350kv-motor/">
+					<div class="imgcard">
+						<img src="http://gettbs.in/image/cache/catalog/motor/LUM7-500x500.jpg
+								  " class="responsive-img">
+						<p>Lumenier RX2206-11 2350Kv
+						</p>
+					</div>
+				</a>
 			</div>
 			<div class="col s12 m4 center">
-				<div class="imgcard">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/91WrbKsb3UL._SL1500_.jpg
-							  ">
-					<p>RaceKraft 5051 TCS
-					</p>
-				</div>
+				<a href="https://www.foreverfpv.com/product/racekraft-5051-tcs-tri-blade/">
+					<div class="imgcard">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/91WrbKsb3UL._SL1500_.jpg
+								  ">
+						<p>RaceKraft 5051 TCS
+						</p>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -167,7 +171,7 @@ include("topNav.php");
 			</div>
 
 			<div class="col s12 m8 center">
-				<a href="https://www.foreverfpv.com/product/kiss-32bit-flight-controller-v1-06/">
+				<a href="https://www.foreverfpv.com/product/kiss-24a-race-edition-esc/">
 					<div class="imgcard">
 						<img src="https://img.rcgroups.com/http://uploads.tapatalk-cdn.com/20160403/c9f696a78dedead76459a0be609231f6.jpg?h=3IKwvJVSLAWQD0OXh-Vrgw
 								  ">
@@ -197,7 +201,7 @@ include("topNav.php");
 		<p>After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
 		</p>
 		<br>
-		<p>Participate in online discussion of fpv news, ask questions or just chit chat on fpv focused communities. Online fpv retailer Forever FPV, has their own online forum in addition to their store. Other FPV online communities are include the FPV Drone Quadcopters Facebook page. For FPV racing events all over the United States follow FPV Racing Events.
+		<p>Participate in online discussion of FPV news, ask questions or just chit chat on FPV focused communities. Online FPV retailer ForeverFPV, has their own online forum in addition to their store. Other FPV online communities are include the FPV Drone Quadcopters Facebook page. For FPV racing events all over the United States follow FPV Racing Events.
 		</p>
 	</div>
 </div>
