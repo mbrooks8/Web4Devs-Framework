@@ -1,15 +1,18 @@
 <?php
 function convertFromHtml(&$html)
 {
-	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));
-	$html = preg_replace('/(?!<[a-zA-Z=\"\':; ]*[^ ]>|<\\/[a-zA-Z="\':; ]*>)(<)/', "&lt;", $html);
+
+/*	$html = str_replace("<a href='#' contenteditable='false' class='submitButton'><div><i class='fa fa-check' aria-hidden='true'></i></div></a>", "", $html);
+	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));*/
+	echo "<script>console.log(".$html.")</script>";
+	/*$html = preg_replace('/(?!<[a-zA-Z=\"\':; ]*[^ ]>|<\\/[a-zA-Z="\':; ]*>)(<)/', "&lt;", $html);*/
 }
 function convertToHtml(&$html)
 {
 	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));
-	$tags = array("</li><li>","<li>",'</li>');
+	/*$tags = array("</li><li>","<li>",'</li>');
 	$tagreplace = array("\n-","-","\n");
-	$html = str_replace($tagreplace, $tags, $html);
+	$html = str_replace($tagreplace, $tags, $html);*/
 }
 
 
@@ -52,7 +55,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
-		convertToHtml($row["content"]);
+		/*convertToHtml($row["content"]);*/
 		echo $row["content"];
 	}
 } else {

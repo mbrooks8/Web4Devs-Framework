@@ -40,37 +40,44 @@ if($user)
 }
 ?>
 <script>
-	/*Select all editable elements, and refresh the content from the database*/
-	var editables = $(".editable");
-	editables.each(function(){
-		console.log("test");
-		getContent($(this));
-	});
-
-
-	/*pull the content from the database, and update the screens content*/
-	function getContent(elem)
-	{
-		console.log("getContent: "+elem[0].innerHTML);
-		$.ajax({
-			url: './php/getContent.php',
-			type: 'GET',
-			data: {
-				"id": '"'+elem[0].id+'"',
-				"content": '"'+elem[0].innerHTML+'"'
-			},
-			success: function(data) {
-				var out = data;
-				elem[0].innerHTML = out;
-				<?php if($user){echo "addEditButton(elem);";}?>
-			},
-			error: function(e) {
-				alert("oops");
-			}
+		$(".sideToggle").click(function(){
+			$(".sidebar").toggleClass("active");
 		});
-	}
+		/*Select all editable elements, and refresh the content from the database*/
+		var editables = $("h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
+		editables.each(function(){
+			console.log("test");
+			getContent($(this));
+		});
+		function getContent(elem)
+		{
+			console.log("getContent: "+elem[0].innerHTML);
+			$.ajax({
+				url: './php/getContent.php',
+				type: 'GET',
+				data: {
+					"id": '"'+elem[0].id+'"',
+					"content": '"'+elem[0].innerHTML+'"'
+				},
+				success: function(data) {
+					var out = data;
+					elem[0].innerHTML = out;
+					elem.find('.submitButton').remove();
+					<?php
+					if($user==true){
+						echo "addEditButton(elem);";
+					}
+					?>
+				},
+				error: function(e) {
+					alert("oops");
+				}
+			});
+		}
 
-</script>
+
+
+	</script>
 
 
 </html>

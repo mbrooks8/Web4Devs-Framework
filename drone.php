@@ -1,6 +1,5 @@
 <?php
 include("topNav.php");
-$user = true;
 ?>
 <div class="banner">
 	<div class="imgDiv valign">
@@ -18,7 +17,7 @@ $user = true;
 <div class="container">
 	<div class="section">
 		<div class="row">
-			<h4 class="center">• FPV Racing •</h4>
+			<h4 class="center editable" id="name">• FPV Racing •</h4>
 
 			<h5 class="primary center">
 				FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
@@ -195,7 +194,7 @@ $user = true;
 		<h5 class="primary center">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
-		<p>After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
+		<p class="editable" id="testForMichael">After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
 		</p>
 		<br>
 		<p>Participate in online discussion of fpv news, ask questions or just chit chat on fpv focused communities. Online fpv retailer Forever FPV, has their own online forum in addition to their store. Other FPV online communities are include the FPV Drone Quadcopters Facebook page. For FPV racing events all over the United States follow FPV Racing Events.
