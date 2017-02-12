@@ -57,6 +57,18 @@
                     var popup = document.getElementById("myPopup");
                     popup.classList.toggle("show");
                 }*/
+
+				var tooltips = $('.tooltip');
+				$.each(tooltips, function( index, value ){
+					$(this).parent().on('click',function(){
+						$(this).find('.tooltip').toggleClass("show");
+					});
+					$(this).parent().on('mouseout',function(){
+						$(this).find('.tooltip.show .tooltiptext').toggleClass("show");
+					});
+				})
+
+
 				var popups = $('.popuptext');
 				$.each(popups, function( index, value ){
 					$(this).parent().on('click',function(){
