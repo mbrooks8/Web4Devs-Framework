@@ -11,15 +11,15 @@
 			<div class="col l4 s12">
 				<h5 class="white-text">Links</h5>
 				<ul>
-					<li><div class="chip" "cursor:none;"> <img src = "img/Michael.jpg" alt="Contact Person"><a style="color:black;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Michael Brooks</a></div></li>
+					<li><a style="color:black;" href="https://www.linkedin.com/in/michael-brooks-26799693/"><div class="chip" "cursor:none;"> <img src = "img/Michael.jpg" alt="Contact Person">Michael Brooks</div></a></li>
 
-					<li><div class="chip" "cursor:none;"> <img src = "img/Deo.jpg" alt="Contact Person"><a style="color:black;" href="https://www.linkedin.com/in/deohalili/">Deo Halili</a></div></li>
+					<li><a style="color:black;" href="https://www.linkedin.com/in/deohalili/"><div class="chip" "cursor:none;"> <img src = "img/Deo.jpg" alt="Contact Person">Deo Halili</div></a></li>
 
-					<li><div class="chip" "cursor:none;"> <img src = "img/Esteban.jpg" alt="Contact Person"><a style="color:black;" href="https://www.linkedin.com/in/estebanmagallonperez/">Esteban Perez</a></div></li>
+					<li><a style="color:black;" href="https://www.linkedin.com/in/estebanmagallonperez/"><div class="chip" "cursor:none;"> <img src = "img/Esteban.jpg" alt="Contact Person">Esteban Perez</div></a></li>
 
-					<li><div class="chip" "cursor:none;"> <img src = "img/Andres.jpg" alt="Contact Person"><a style="color:black;" href="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg">Andres Reyes</a></div></li>
+					<li><a style="color:black;" href="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg"><div class="chip" "cursor:none;"> <img src = "img/Andres.jpg" alt="Contact Person">Andres Reyes</div></a></li>
 
-					<li><div class="chip" "cursor:none;"> <img src = "img/sloth.jpg" alt="Contact Person"><a style="color:black;" href="https://www.linkedin.com/in/nicholas-vaishampayan-bb8ba2a5/">Nick Vaishampayan</a></div></li>
+					<li><a style="color:black;" href="https://www.linkedin.com/in/nicholas-vaishampayan-bb8ba2a5/"><div class="chip" "cursor:none;"> <img src = "img/sloth.jpg" alt="Contact Person">Nick Vaishampayan</div></a></li>
 				</ul>
 			</div>
 		</div>
