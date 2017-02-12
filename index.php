@@ -131,52 +131,6 @@ $user = true;
 			<div class="container">
 				<div class="section">
 					<h4 class="center">• CORE Features •</h4>
-<<<<<<< HEAD
-					<p>The frame work has many different ease of life functions.</p>
-					<table class="bordered">
-						<thead>
-							<tr>
-								<th>Firstname</th>
-								<th>Lastname</th>
-								<th>Savings</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Peter</td>
-								<td>Griffin</td>
-								<td>$100</td>
-							</tr>
-							<tr>
-								<td>Lois</td>
-								<td>Griffin</td>
-								<td>$150</td>
-							</tr>
-							<tr>
-								<td>Joe</td>
-								<td>Swanson</td>
-								<td>$300</td>
-							</tr>
-							<tr>
-								<td>Cleveland</td>
-								<td>Brown</td>
-								<td>$250</td>
-							</tr>
-						</tbody>
-					</table>
-					<p class="primary center">
-						<!-- start slipsum code -->
-
-						Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
-
-						<!-- end slipsum code --></p>
-=======
-					<p class="primary center hoverable"><!-- start slipsum code -->
-
-Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
-
-<!-- end slipsum code --></p>
->>>>>>> origin/master
 					<br>
 					<div class="row">
 						<div class="col s12 m8 center">
@@ -267,18 +221,6 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-			<div class="valign imgSection">
-				<img src="img/filler3.jpg">
-				<div>
-					<h1 class="white-text">More Words</h1>
-				</div>
-			</div>
-
 
 			<!--WHO WE ARE-->
 			<div class="container">
