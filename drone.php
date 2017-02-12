@@ -102,9 +102,39 @@ $user = true;
 					background:rgba(70,40,125,0);
 				}
 			</style>
+			<style>
+				.rotate {
+					transform-origin: 50.05% 58.58%;
+					display:table-cell;
+					vertical-align:top;
+					-webkit-animation: cssAnimation .8s infinite  linear;
+					-moz-animation: cssAnimation .8s infinite  linear;
+					-o-animation: cssAnimation .8s infinite linear;
+				}
+				#topLeft,#bottomRight
+				{
+					animation-delay: .1s;
+				}
+				@-webkit-keyframes cssAnimation {
+					from { -webkit-transform: rotate(0deg) ;}
+					to { -webkit-transform: rotate(360deg) ; }
+				}
+				@-moz-keyframes cssAnimation {
+					from { -moz-transform: rotate(0deg); }
+					to { -moz-transform: rotate(360deg); }
+				}
+				@-o-keyframes cssAnimation {
+					from { -o-transform: rotate(0deg) ; }
+					to { -o-transform: rotate(360deg) ; }
+				}
+
+			</style>
 
 			<nav class="fixed navbar">
-				<a href="#" class="logo sideToggle"><img src="http://1.bp.blogspot.com/-ata3-fQGA1M/UUxnSdNHqAI/AAAAAAAAAFI/Kb0gJs4YY_k/s1600/4.png" ></a>
+				<a href="#" class="logo sideToggle" style="height:64px;">
+					<?php include("drawingTest.html"); ?>
+
+				</a>
 				<!--<img src="/assets/hamburger.svg" alt="Kiwi standing on oval">-->
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#!">PROJECTS</a></li>
@@ -118,11 +148,15 @@ $user = true;
 
 			</nav>
 
-			<div class="banner valign">
-				<div class="container">
-					<p>A <span class="secondary">Front End and Back End</span><br class="hide-on-med-and-up"> web development framework <span class="secondary">society</span></p>
-					<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Drone</h1>
-					<p>Built <span class="secondary">For developers by developers</span></p>
+			<div class="banner">
+				<div class="imgDiv valign">
+					<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+					<img src="http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg">
+					<div class="container">
+						<p><span class="secondary">Revolutionizing</span> Sports and Technology</p>
+						<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>4fpv</h1>
+						<p>Bringing <span class="secondary">Skill and Precision</span> to The<span class="secondary"> Next Level</span></p>
+					</div>
 				</div>
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
@@ -141,9 +175,23 @@ $user = true;
 						</div>
 
 						<div class="col s12 m8">
-							FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.
+							<p>
+							FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. <br>Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.</p>
 						</div>
 					</div>
+
+					<div class="shittyAddBanner valign">
+						<div class="row valign" style="width:100%;">
+							<div class="col s2" style="height:100%;">
+								<?php include("drawingTest.html"); ?>
+							</div>
+							<div class="col s8">
+								<h4 class="white-text">Hire Us<br><span class="secondary">We Are Poor</span></h4>
+							</div>
+							<div class="button raised">Please</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
