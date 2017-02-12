@@ -18,11 +18,11 @@ session_start();
 		if(isset($_SESSION['username']))
 		{
 			echo '<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
-
+			echo '		<script src="./js/editContent.js"></script>';
 		}
 
 		?>
-		<script src="./js/editContent.js"></script>
+
 	</head>
 	<body class="Site">
 		<div class="Site-content content">

@@ -193,15 +193,16 @@ include("topNav.php");
 <div class="container">
 	<div class="section">
 
-		<h4 class="center">• EQUIPMENT - DIY •</h4>
+		<h4 class="center editable" id="lastSecHead">• EQUIPMENT - DIY •</h4>
 
-		<h5 class="primary center">
+		<h5 class="primary center editable"id="lastSecSubHead">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
-		<p>After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts attending local events. Holding events out of Bakersfield California is Bakersfield Multirotor, a <span><a>Tier 1 Chapter of MultiGP MultiRotor Chapter</a></span>.
+		<p>After practicing a bit, a great way to improve your skills, meet up with fellow fpv racers and even trade parts is attending local events. Holding events out of Bakersfield, California is <span><a href="http://bakersfieldmultirotor.com/index.htm">Bakersfield Multirotor, a Tier 1 Chapter of MultiGP</a></span>.
 		</p>
 		<br>
-		<p>Participate in online discussion of FPV news, ask questions or just chit chat on FPV focused communities. Online FPV retailer ForeverFPV, has their own online forum in addition to their store. Other FPV online communities are include the FPV Drone Quadcopters Facebook page. For FPV racing events all over the United States follow FPV Racing Events.
+
+		<p>Participate in online discussion of FPV news, ask questions or just chit chat on FPV focused communities. Online FPV retailer <span><a href="http://foreverfpv.com/forum/">ForeverFPV, has their own online forum</a></span> in addition to their store. Other FPV online communities include the <span><a href="https://www.facebook.com/FPV-Drones-Quadcopters-USA-California-708129355975284/">FPV Drone Quadcopters Facebook page</a></span>. For FPV racing events all over the United States follow <span><a href = "http://fpvracingevents.com/">FPV Racing Events</a></span>.
 		</p>
 	</div>
 </div>

@@ -26,7 +26,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2014 Copyright 4Dev All Rights Reserved
+			© 2017 Copyright 4Dev All Rights Reserved
 			<a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/estebanmagallonperez/">Please Hire Us</a>
 		</div>
 	</div>
@@ -38,12 +38,6 @@
 		$(".sidebar").toggleClass("active");
 	})
 </script>
-<?php
-if($user)
-{
-	echo '<script src="./js/editContent.js"></script>';
-}
-?>
 <script>
 		/*Select all editable elements, and refresh the content from the database*/
 	console.log("making edits");

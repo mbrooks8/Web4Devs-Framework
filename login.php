@@ -39,9 +39,10 @@
 			}
 
 			#layer1 {
-				-webkit-animation: bob 1.3s infinite  ease-in-out;
-				-moz-animation: bob 1.3s infinite  ease-in-out;
-				-o-animation: bob 1.3s infinite ease-in-out;
+				transform-origin: 50% 50%;
+				-webkit-animation: bob 1.7s infinite  ease-in-out;
+				-moz-animation: bob 1.7s infinite  ease-in-out;
+				-o-animation: bob 1.7s infinite ease-in-out;
 				animation-direction: alternate;
 			}
 
@@ -68,13 +69,19 @@
 		</style>
 
 		<div class="banner valign" style="min-height:100vh;height: 100vh !important;">
-			<div class="card" style="background-color:rgba(0,0,0,0.2);color:white;">
+			<div class="card center" style="background-color:rgba(0,0,0,0.2);color:white;">
+
+					<div  style="width:30%;display:inline-block;">
+						<?php include("drawingTest.html"); ?>
+					</div>
+
 				<form action="./sessionManager.php" method="POST">
+					<br>
 					Username:<br>
-					<input type="text" name="username"><br>
+					<input type="text" name="username"><br><br>
 					Password:<br>
 					<input type="password" name="password">
-					<br>
+					<br><br>
 					<div class="center">
 						<input class="button raised" type="submit" value="login">
 					</div>
