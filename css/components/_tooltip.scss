@@ -2,34 +2,44 @@
 	position: relative;
 	display: inline-block;
 	border-bottom: 1px dotted black;
-}
+	transition-delay: all 1s ease;
+	cursor: pointer;
 
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: $tooltip-width;
-	background-color: $tooltip-background-color;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: $tooltip-padding;
-	position: absolute;
-	z-index: 1;
-	bottom: 150%;
-	left: 50%;
-	margin-left: -60px;
-}
+	.tooltiptext {
+		visibility: hidden;
+		width: $tooltip-width;
+		background-color: $tooltip-background-color;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: $tooltip-padding;
+		position: absolute;
+		z-index: 1;
+		bottom: 150%;
+		left: 50%;
+		margin-left: -60px;
+		transition-delay: all 1s ease;
 
-.tooltip .tooltiptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: black transparent transparent transparent;
+		}
+	}
+	&:hover .tooltiptext {
+		visibility: visible;
+		/*	-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;*/
+		transition-delay: 0.5s;
+	}
+	&:show .tooltiptext {
+		visibility: visible;
+		/*	-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;*/
+	}
 }

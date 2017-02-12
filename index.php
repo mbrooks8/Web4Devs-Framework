@@ -131,6 +131,7 @@ $user = true;
 			<div class="container">
 				<div class="section">
 					<h4 class="center">• CORE Features •</h4>
+<<<<<<< HEAD
 					<p>The frame work has many different ease of life functions.</p>
 					<table class="bordered">
 						<thead>
@@ -169,6 +170,13 @@ $user = true;
 						Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
 
 						<!-- end slipsum code --></p>
+=======
+					<p class="primary center hoverable"><!-- start slipsum code -->
+
+Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+
+<!-- end slipsum code --></p>
+>>>>>>> origin/master
 					<br>
 					<div class="row">
 						<div class="col s12 m8 center">
@@ -261,30 +269,12 @@ $user = true;
 			</div>
 
 
-			<style>
-				.imgSection{
-					background-size: cover;
-					background-position: center;
-					background-attachment:scroll;
-					min-height:75vh;
-					background-color:black;
-					pointer-events: none;
-					overflow: none;
-					width:100%;
-					z-index:-1;
-				}
-				.imgSectionText{
-					height:100%;
-					Width:100%;
-				}
-				.background1{
-					background-image: url(http://www.ucmercedbobcats.com/images/2012-13/DSC_4556-Edit.jpg);
-				}
-			</style>
 
 
-			<div class="imgSection background1 valign">
-				<div class="imgSectionText center">
+
+			<div class="valign imgSection">
+				<img src="img/filler3.jpg">
+				<div>
 					<h1 class="white-text">More Words</h1>
 				</div>
 			</div>

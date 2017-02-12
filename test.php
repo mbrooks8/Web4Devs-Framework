@@ -3,6 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<meta name="google-signin-client_id" content="245055885472-n8ku1nor45mos9h1a01q5njbvovk1qsl.apps.googleusercontent.com">
+
 		<title>Starter Template - Poverty</title>
 
 		<!-- CSS  -->
@@ -10,6 +12,8 @@
 		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 		<style>
 			body
 			{
@@ -30,6 +34,10 @@
 
 
 	<body>
+
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
 		<div class="row">
 		<div class="col m2 editable" id="column">hi</div>
 		<div class="col m2">hello</div>
@@ -38,18 +46,23 @@
 		</div>
 
 		<div class="card editable" spellcheck="true" id="adsfasdf">
+			-
 		</div>
 		<ul class="editable" id="asd">
+			<li></li>
 		</ul>
 		<ol class="editable" id="asd">
+			<li></li>
 		</ol>
-		<div class="chip editable" id="chip"></div>
-		<div class="chip editable" id="helpMe">
+		<div class="chip">
 			<img src = "img/sloth.jpg" alt="Contact Person" width="96" height="96">
 			<span>Slothy McSlothface </span>
 			<span class="closebtn" onclick="this.parentElement.style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></span>
 		</div>
-
+		<!--ClientID-->
+		<!--245055885472-n8ku1nor45mos9h1a01q5njbvovk1qsl.apps.googleusercontent.com-->
+		<!--ClientSecret-->
+		<!--TCLXJtifFFCjhYn1if4nj_ru-->
 
 	</body>
 	<script>

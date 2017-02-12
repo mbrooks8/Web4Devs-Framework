@@ -1,7 +1,7 @@
 //This file includes all the javascript for editing, and updating an editable element
 
-var editButton = "<a href='#' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
-var submit = "<a href='#' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
+var editButton = "<a href='#'contenteditable='true' class='editButton'><div ><i class='fa fa-pencil-square-o' aria-hidden='true'></i></div></a>";
+var submit = "<a href='#'contenteditable='true' class='submitButton'><div ><i class='fa fa-check' aria-hidden='true'></i></div></a>";
 /*adds the edit wrapper, as well as the edit button*/
 function addEditButton(elem)
 {
@@ -34,6 +34,45 @@ function editWindow(elem)
         },
         success: function(data) {
             elem.attr('contenteditable', 'true');
+            elem.on('keydown',function(e){
+                if(e.which == 8 || e.which ==46){
+
+                    if(this.innerHTML.slice( 0,-1) == '<a href="#" contenteditable="true" class="submitButton"><div><i class="fa fa-check" aria-hidden="true"></i></div></a>')
+                    {
+                        //e.preventDefault();
+                        text = '+';
+                        sel = window.getSelection();
+                        range = sel.getRangeAt(0).cloneRange();
+                        //console.log(range.endOffset);
+                        range.deleteContents();
+                        textNode = document.createTextNode(text);
+                        range.insertNode(textNode);
+                        range = sel.getRangeAt(0).cloneRange();
+
+                        // Move caret to the end of the newly inserted text node
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                        range.setStart(textNode, textNode.length);
+                        range.setEnd(textNode, textNode.length);
+                        var temp = this;
+                        setTimeout(function(){
+                            var range = document.createRange();
+                            range.selectNodeContents(temp);
+                            range.collapse(false);
+                            var sel = window.getSelection();
+                            sel.removeAllRanges();
+                            sel.addRange(range);
+                        },1)
+
+
+
+
+
+
+                    }
+                }
+                console.log(this.innerHTML);
+            })
             elem.find('.editButton').replaceWith(submit);
             /*elem.find( ".submitArea" ).val(data);*/
             elem.find( ".submitButton" ).click(function(){
