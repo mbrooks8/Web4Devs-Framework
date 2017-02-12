@@ -128,6 +128,26 @@ $user = true;
 					to { -o-transform: rotate(360deg) ; }
 				}
 
+				#layer1 {
+					-webkit-animation: bob 1.3s infinite  ease-in-out;
+					-moz-animation: bob 1.3s infinite  ease-in-out;
+					-o-animation: bob 1.3s infinite ease-in-out;
+					animation-direction: alternate;
+				}
+
+				@-webkit-keyframes bob {
+					from { -webkit-transform: scale(1) ;}
+					to { -webkit-transform: scale(.95) ; }
+				}
+				@-moz-keyframes bob {
+					from { -moz-transform: scale(1); }
+					to { -moz-transform: scale(.95); }
+				}
+				@-o-keyframes bob {
+					from { -o-transform: scale(1) ; }
+					to { -o-transform: scale(.95) ; }
+				}
+
 			</style>
 
 			<nav class="fixed navbar">
