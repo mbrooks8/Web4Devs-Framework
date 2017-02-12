@@ -44,19 +44,6 @@
 			</div>
 			<br>
 			<script>
-				// When the user clicks on div, open the popup
-				/*var popups = $('.popuptext');
-                popups.forEach((element,index){
-                               console.log(this_;
-                               }
-                for(var i =0; i < popups.length;i++)
-                {
-                    console.log(popups[i].parent());
-                }*/
-				/*function myFunction() {
-                    var popup = document.getElementById("myPopup");
-                    popup.classList.toggle("show");
-                }*/
 				var popups = $('.popuptext');
 				$.each(popups, function( index, value ){
 					$(this).parent().on('click',function(){

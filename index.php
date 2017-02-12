@@ -3,21 +3,21 @@ $user = true;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <title>Starter Template - Poverty</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Starter Template - Poverty</title>
 
-        <!-- CSS  -->
-        <link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <script src="./js/poverty.js" async></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-        <style>
-            <?php
-            if($user)
-            {
-                echo ".editable
+		<!-- CSS  -->
+		<link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<script src="./js/poverty.js" async></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+		<style>
+			<?php
+			if($user)
+			{
+				echo ".editable
         {
 
         }.editWrapper
@@ -108,10 +108,6 @@ $user = true;
 				<!--<img src="/assets/hamburger.svg" alt="Kiwi standing on oval">-->
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#!">PROJECTS</a></li>
-					<li><a href="#!">EVENTS</a></li>
-					<li><a href="#!">SEED Grants</a></li>
-					<li><a href="#!">PEOPLE</a></li>
-					<li><a href="#!">NEWS</a></li>
 					<li><a href="#!" class="navbutton">DONATE</a></li>
 					<li><a href="#!">SEARCH</a></li>
 				</ul>
@@ -135,30 +131,63 @@ $user = true;
 			<div class="container">
 				<div class="section">
 					<h4 class="center">• CORE Features •</h4>
-					<p class="primary center"><!-- start slipsum code -->
+					<p>The frame work has many different ease of life functions.</p>
+					<table class="bordered">
+						<thead>
+							<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Savings</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Peter</td>
+								<td>Griffin</td>
+								<td>$100</td>
+							</tr>
+							<tr>
+								<td>Lois</td>
+								<td>Griffin</td>
+								<td>$150</td>
+							</tr>
+							<tr>
+								<td>Joe</td>
+								<td>Swanson</td>
+								<td>$300</td>
+							</tr>
+							<tr>
+								<td>Cleveland</td>
+								<td>Brown</td>
+								<td>$250</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="primary center">
+						<!-- start slipsum code -->
 
-Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+						Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
 
-<!-- end slipsum code --></p>
+						<!-- end slipsum code --></p>
 					<br>
 					<div class="row">
 						<div class="col s12 m8 center">
 							<div class="imgcard">
 								<img src="img/filler3.jpg">
-								<p>Mobile App Challenge</p>
+								<p>Drone 1</p>
 							</div>
 						</div>
 
 						<div class="col s12 m4 center">
 							<div class="imgcard">
 								<img src="img/filler2.jpg" class="responsive-img">
-								<p>Idea Design Clinic</p>
+								<p>Drone 2</p>
 							</div>
 						</div>
 						<div class="col s12 m4 center">
 							<div class="imgcard">
 								<img src="img/filler3.jpg">
-								<p>Ag Tech Fair</p>
+								<p>Drone 3</p>
 							</div>
 						</div>
 					</div>
@@ -168,14 +197,14 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 						<div class="col s12 m4 center">
 							<div class="imgcard">
 								<img src="img/filler2.jpg">
-								<p>Frontiers In Technology</p>
+								<p>Drone 4</p>
 							</div>
 						</div>
 
 						<div class="col s12 m8 center">
 							<div class="imgcard">
 								<img src="img/filler3.jpg">
-								<p>AVIATION</p>
+								<p>Drone 5</p>
 							</div>
 						</div>
 
@@ -223,7 +252,7 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 						<div class="row valign" style="width:100%;">
 							<div class="col s2" style="height:100%;"><i class="fa fa-grav fa-5x secondary" aria-hidden="true"></i></div>
 							<div class="col s8">
-								<h4 class="white-text">Learn about our<br><span class="secondary">Seed Grant Projects</span></h4>
+								<h4 class="white-text">Learn about our<br><span class="secondary">Other Projects</span></h4>
 							</div>
 							<div class="button raised">Button</div>
 						</div>
@@ -309,7 +338,7 @@ Your bones don't break, mine do. That's clear. Your cells react to bacteria and 
 
 					<h4 class="center">• Donate to CITRIS •</h4>
 					<p>Whether you're looking to support our <a>ongoing projects</a> or become a <a>sponsor of the 2016 Mobile App Challenge</a>, we're always looking for your support. We accept contributions through the UC Merced Giving website. Tap the button below to continue.</p>
-<a type="button" class="button raised">Donate</a>
+					<a type="button" class="button raised">Donate</a>
 				</div>
 
 
