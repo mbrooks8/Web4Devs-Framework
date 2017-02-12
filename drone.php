@@ -127,7 +127,18 @@ $user = true;
 				<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 			</div>
 
-
+<div class="container">
+			<div class="section">
+	<div class="row">
+				<div class="col s12 m4">
+		<img class="responsive-img" src="http://blog.dronetrest.com/content/images/2016/05/helipal-com-storm-racing-drone-f1.jpg">
+		</div>
+		<div class="col s12 m8">
+		FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.
+		</div>
+				</div>
+	</div>
+			</div>
 			<!--PROJECTS AND EVENTS-->
 			<div class="container">
 				<div class="section">
@@ -174,38 +185,18 @@ $user = true;
 				</div>
 			</div>
 			<style>
-				.imgSection{
-					background-size: cover;
-					background-position: center;
-					background-attachment:scroll;
-					min-height:50vh;
-					background-color:black;
-					pointer-events: none;
-					overflow: none;
-					width:100%;
-					z-index:-1;
-				}
-				.imgSectionText{
-					height:100%;
-					Width:100%;
-				}
-				.background1{
-					background-image: url(http://www.multivu.com/players/English/7923151-broadcast-media-announcement/image/drl-2016-season-is-here-2-HR.jpg);
+				h1{
+					text-shadow: 1px 1px 8px #000000;
 				}
 			</style>
 
-
-			<div class="imgSection background1 valign">
-				<div class="imgSectionText center">
-					<style>
-						h1{
-							text-shadow: 1px 1px 8px #000000;
-						}
-					</style>
-					<h1 class="white-text">YOUR Drone, YOUR way
-					</h1>
+			<div class="valign imgSection">
+				<img src="http://www.multivu.com/players/English/7923151-broadcast-media-announcement/image/drl-2016-season-is-here-2-HR.jpg">
+				<div>
+					<h1 class="white-text">YOUR Drone, YOUR way</h1>
 				</div>
 			</div>
+
 			<!--##################################################################-->
 			<div class="container">
 				<div class="section">
@@ -274,44 +265,13 @@ $user = true;
 						<!--<div class="col s12 m2"></div>-->
 					</div>
 
-
-
-					<table class="bordered">
-						<thead>
-							<tr>
-								<th>Firstname</th>
-								<th>Lastname</th>
-								<th>Savings</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Peter</td>
-								<td>Griffin</td>
-								<td>$100</td>
-							</tr>
-							<tr>
-								<td>Lois</td>
-								<td>Griffin</td>
-								<td>$150</td>
-							</tr>
-							<tr>
-								<td>Joe</td>
-								<td>Swanson</td>
-								<td>$300</td>
-							</tr>
-							<tr>
-								<td>Cleveland</td>
-								<td>Brown</td>
-								<td>$250</td>
-							</tr>
-						</tbody>
-					</table>
+					<p>To fully build your own drone, you will need more than the parts pictured above. For a full list of parts and specifications or reviews refer to the hyperlinks in the table below:</p>
 				</div>
 			</div>
-			<div class="imgSection background1 valign">
-				<div class="imgSectionText center">
-					<h1 class="white-text">More Words</h1>
+			<div class="valign imgSection">
+				<img src="http://www.realclearlife.com/wp-content/uploads/2016/09/GettyImages-539178636.jpg">
+				<div>
+					<h1 class="white-text">Show Off Your Skills</h1>
 				</div>
 			</div>
 			<div class="container">
@@ -322,8 +282,9 @@ $user = true;
 					<h5 class="primary center">
 						Your Bank Balance is Going to Suffer</h5>
 					<br>
-					<p>If you like building things, then taking the DIY approach to your first drone is great. For some drone racers, building the quad is half the fun.  In addition to being to have your custom drone look exactly as you want, the other advantage of building your own quad is that you'll have the knowledge and skills to fix it when you crash. The parts pictured below are available at https://www.foreverfpv.com/.</p>
+					<p>After some practicing a bit, a great way to improve your skills, meet fellow fpv racers and even trade parts is going to local events. Here’s a list of some fpv racing groups and events located near Merced, CA.</p>
 					<br>
+					<p></p>
 				</div>
 			</div>
 
