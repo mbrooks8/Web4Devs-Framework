@@ -39,7 +39,7 @@ include("topNav.php");
 					<?php include("drawingTest.html"); ?>
 				</div>
 				<div class="col s8">
-					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Poor</span></h4>
+					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Underfunded</span></h4>
 				</div>
 				<div class="button raised"><a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please</a></div>
 			</div>
