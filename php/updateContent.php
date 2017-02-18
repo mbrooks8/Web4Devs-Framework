@@ -13,15 +13,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-echo $id;
-
+//echo $id;
+//$content = preg_replace('/(\s\s)/', '',$content));
 $sql = 'UPDATE content SET content = "'.$content.'" WHERE content.id = "'.$id.'"';
 if($result = $conn->query($sql))
 {
-    echo "we did it";
+    echo "<scirpt>alert('we did it');</script>";
 }else
 {
-    echo "we didnt do it";
+    echo "<scirpt>alert('we didnt do it');</script>";
 }
 $conn->close();
 ?>

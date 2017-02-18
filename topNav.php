@@ -14,14 +14,6 @@ session_start();
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 
-		<?php
-		if(isset($_SESSION['username']))
-		{
-			echo '<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
-			echo '		<script src="./js/editContent.js"></script>';
-		}
-
-		?>
 
 	</head>
 	<body class="Site">

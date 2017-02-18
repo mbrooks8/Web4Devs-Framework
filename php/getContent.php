@@ -1,39 +1,4 @@
 <?php
-function convertFromHtml(&$html)
-{
-
-/*	$html = str_replace("<a href='#' contenteditable='false' class='submitButton'><div><i class='fa fa-check' aria-hidden='true'></i></div></a>", "", $html);
-	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));*/
-	echo "<script>console.log(".$html.")</script>";
-	/*$html = preg_replace('/(?!<[a-zA-Z=\"\':; ]*[^ ]>|<\\/[a-zA-Z="\':; ]*>)(<)/', "&lt;", $html);*/
-}
-function convertToHtml(&$html)
-{
-	$html = preg_replace('/(\s\s)/', '',(strip_tags($html,"<b><ul><li><br><ol>")));
-	/*$tags = array("</li><li>","<li>",'</li>');
-	$tagreplace = array("\n-","-","\n");
-	$html = str_replace($tagreplace, $tags, $html);*/
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $id = $_GET["id"];
 $content = $_GET["content"];
 
@@ -50,31 +15,47 @@ if ($conn->connect_error) {
 
 
 
+
+
+
+
 $sql = "SELECT * FROM content where id =". $id;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+	//echo "<script>console.log('".$content."');</script>";
 	while($row = $result->fetch_assoc()) {
-		/*convertToHtml($row["content"]);*/
 		echo $row["content"];
 	}
 } else {
-	convertFromHtml($content);
+	$re = '/=((.*?)")((.*?)")/';
 
-	if(strpos($content,"<script") > -1 || strpos($content,"<div") > -1 || strpos($content,"<?php") > -1)
+
+	preg_match_all($re, $content, $matches);
+	$count = 0;
+	foreach( $matches as $match)
 	{
-		$sql = "INSERT INTO content(id, content) VALUES (".$id.",You are trying to use unsupported tags within an editable. Consider using a Template, or applying an editable class to one of the child nodes)";
-	}else{
-		$sql = "INSERT INTO content(id, content) VALUES (".$id.",".$content.")";
+		if($count%5 == 0){
+			$content = str_replace($match, preg_replace('/"/', '\\"',$match), $content);
+		}
+		$count++;
 	}
-	$conn->query($sql);
+	$content = preg_replace('/(\s\s+)/', '',$content);
+
+	$sql = 'INSERT INTO content(id, content) VALUES ('.$id.','.$content.')';
+	$rez = $conn->query($sql);
+	if($rez){
+		//echo "worked";
+	}else
+	{
+		echo"Couldnt save this element, consider reducing the number of nested tags.";
+	}
 
 	$sql = "SELECT * FROM content where id =". $id;
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			convertToHtml($row["content"]);
 			echo $row["content"];
 		}
 	}
