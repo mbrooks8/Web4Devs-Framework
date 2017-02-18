@@ -38,43 +38,7 @@
 		$(".sidebar").toggleClass("active");
 	})
 </script>
-<script>
-		/*Select all editable elements, and refresh the content from the database*/
-	//console.log("making edits");
-		var editables = $("ul.editable,ol.editable,h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
-		editables.each(function(){
-			//console.log("test");
-			getContent($(this));
-		});
-		function getContent(elem)
-		{
-			//console.log("getContent: "+elem[0].innerHTML);
-			$.ajax({
-				url: './php/getContent.php',
-				type: 'GET',
-				data: {
-					"id": '"'+elem[0].id+'"',
-					"content": '"'+elem[0].innerHTML+'"'
-				},
-				success: function(data) {
-					var out = data;
-					elem[0].innerHTML = out;
-					elem.find('.submitButton').remove();
-					<?php
-					if(isset($_SESSION["username"])){
-						echo "addEditButton(elem);";
-					}
-					?>
-				},
-				error: function(e) {
-					alert("oops");
-				}
-			});
-		}
-
-
-
-	</script>
+<script src="./js/loadContent.js" async></script>
 
 
 </html>
