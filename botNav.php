@@ -17,7 +17,7 @@
 
 					<li><a style="color:black;" href="https://www.linkedin.com/in/estebanmagallonperez/"><div class="chip" "cursor:none;"> <img src = "img/Esteban.jpg" alt="Contact Person">Esteban Perez</div></a></li>
 
-					<li><a style="color:black;" href="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg"><div class="chip" "cursor:none;"> <img src = "img/Andres.jpg" alt="Contact Person">Andres Reyes</div></a></li>
+					<li><a style="color:black;" href="https://www.linkedin.com/in/andres-reyes-182465133/"><div class="chip" "cursor:none;"> <img src = "img/Andres.jpg" alt="Contact Person">Andres Reyes</div></a></li>
 
 					<li><a style="color:black;" href="https://www.linkedin.com/in/nicholas-vaishampayan-bb8ba2a5/"><div class="chip" "cursor:none;"> <img src = "img/sloth.jpg" alt="Contact Person">Nick Vaishampayan</div></a></li>
 				</ul>
@@ -41,7 +41,7 @@
 <script>
 		/*Select all editable elements, and refresh the content from the database*/
 	console.log("making edits");
-		var editables = $("h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
+		var editables = $("ul.editable,ol.editable,h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
 		editables.each(function(){
 			console.log("test");
 			getContent($(this));

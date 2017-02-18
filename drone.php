@@ -17,9 +17,9 @@ include("topNav.php");
 <div class="container">
 	<div class="section">
 		<div class="row">
-			<h4 class="center editable" id="name">• FPV Racing •</h4>
+			<h4 class="center editable" id="racingHead">• FPV Racing •</h4>
 
-			<h5 class="primary center">
+			<h5 class="primary center editable" id="racingSubHead">
 				FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
 			<br>
 
@@ -28,7 +28,7 @@ include("topNav.php");
 			</div>
 
 			<div class="col s12 m8">
-				<p>
+				<p class="editable" id="paragraph">
 					FPV, or First-Person-View, is a way of drone racing involving a mounted camera on the drone that relays real-time information back to the pilot (and viewers) through a pair of goggles. <br>Drone racing requires lightning-fast decision making and reactions in ways few other sports demand, with drone speeds up to 120 mph. With the tension and adrenaline induced by the high-stakes races, FPV racing has developed a passionate community eager to demonstrate and propagate the excitement of drone racing.</p>
 			</div>
 		</div>
@@ -39,7 +39,7 @@ include("topNav.php");
 					<?php include("drawingTest.html"); ?>
 				</div>
 				<div class="col s8">
-					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Poor</span></h4>
+					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Underfunded</span></h4>
 				</div>
 				<div class="button raised"><a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please</a></div>
 			</div>
@@ -57,9 +57,9 @@ include("topNav.php");
 <!--PROJECTS AND EVENTS-->
 <div class="container">
 	<div class="section">
-		<h4 class="center">• What's in a Quad •</h4>
+		<h4 class="center editable" id="quadHead">• What's in a Quad •</h4>
 
-		<h5 class="primary center">
+		<h5 class="primary center editable" id="quadSubHead">
 			FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
 		<br>
 		<div class="row">
@@ -75,7 +75,7 @@ include("topNav.php");
 				</ul>
 			</div>
 			<div class="col s12 m6">
-				<ul>
+				<ul class="editable" id="list2">
 					<li>Video transmitter (vTx) and receiver (vRx)</li>
 					<li>Radio transmitter (Tx) and receiver (Rx)</li>
 					<li>Antennas</li>
@@ -115,9 +115,9 @@ include("topNav.php");
 <div class="container">
 	<div class="section">
 
-		<h4 class="center">• EQUIPMENT - DIY •</h4>
+		<h4 class="center editable" id="diyHead">• EQUIPMENT - DIY •</h4>
 
-		<h5 class="primary center">
+		<h5 class="primary center editable" id="diySubHead">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
 		<p>If you like building things, then taking the DIY approach to your first drone is great. For some drone racers, building the quad is half the fun.  In addition to being to have your custom drone look exactly as you want, the other advantage of building your own quad is that you'll have the knowledge and skills to fix it when you crash. The parts pictured below are available at <a href="https://www.foreverfpv.com/"> ForeverFPV</a>.
