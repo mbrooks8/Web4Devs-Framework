@@ -65,7 +65,7 @@ include("topNav.php");
 		<div class="row">
 			<p>An FPV racing quadcopter is made up of the following parts:</p>
 			<div class="col s12 m6">
-				<ul>
+				<ul class="editable" id="victor">
 					<li>Frame</li>
 					<li>4 motors</li>
 					<li>4 ESCs</li>
@@ -198,7 +198,7 @@ include("topNav.php");
 		<h5 class="primary center editable"id="lastSecSubHead">
 			Your Bank Balance is Going to Suffer</h5>
 		<br>
-		<p>After practicing a bit, a great way to improve your skills, meet up with fellow fpv racers and even trade parts is attending local events. Holding events out of Bakersfield, California is <span><a href="http://bakersfieldmultirotor.com/index.htm">Bakersfield Multirotor, a Tier 1 Chapter of MultiGP</a></span>.
+		<p class="editable" id="testestest">After practicing a bit, a great way to improve your skills, meet up with fellow fpv racers and even trade parts is attending local events. Holding events out of Bakersfield, California is <span><a href='http://bakersfieldmultirotor.com/index.htm'>Bakersfield Multirotor, a Tier 1 Chapter of MultiGP</a></span>.
 		</p>
 		<br>
 
