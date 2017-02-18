@@ -140,7 +140,7 @@ session_start();
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#!">PROJECTS</a></li>
 					<li><a href="#!" class="navbutton">DONATE</a></li>
-					<li><a href="#!">SEARCH</a></li>
+					<li><a href="login.php">LOGIN</a></li>
 				</ul>
 
 				<?php
