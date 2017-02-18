@@ -58,13 +58,13 @@ session_start();
 			</div>
 
 			<script>
-				$(document).on('scroll', function (e) {
+/*				$(document).on('scroll', function (e) {
 					var x=($(document).scrollTop() / 100);
 					if (x>0.9) {
 						x=0.9;
 					}
 					$('.navbar').css('background', 'rgba(70,40,125,' + x + ')');
-				});
+				});*/
 			</script>
 
 			<style>
