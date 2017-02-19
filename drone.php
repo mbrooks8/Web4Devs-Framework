@@ -3,7 +3,7 @@ include("topNav.php");
 ?>
 <div class="banner">
 	<div class="imgDiv valign">
-		<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+		<div class="imgOverlay"></div>
 		<img src="http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg">
 		<div class="container">
 			<p><span class="secondary">Revolutionizing</span> Sports and Technology</p>
@@ -19,7 +19,7 @@ include("topNav.php");
 		<div class="row">
 			<h4 class="center editable" id="racingHead">• FPV Racing •</h4>
 
-			<h5 class="primary center editable" id="racingSubHead">
+			<h5 class="primary center editable hoverable" id="racingSubHead">
 				FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
 			<br>
 
