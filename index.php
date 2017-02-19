@@ -1,5 +1,5 @@
 <?php
-include("topNav.php");
+include("/php/template/topNav.php");
 ?>
 <div class="banner">
 	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
@@ -207,4 +207,4 @@ include("topNav.php");
 		</p>
 	</div>
 </div>
-<?php include("botNav.php"); ?>
+<?php include("/php/template/botNav.php"); ?>
