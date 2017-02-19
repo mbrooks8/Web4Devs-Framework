@@ -125,7 +125,7 @@ session_start();
 				   }
 				   ?>
 				   class="logo" style="height:64px;">
-					<?php include("drawingTest.html"); ?>
+					<?php include("/img/icon.html"); ?>
 
 				</a>
 				<!--<img src="/assets/hamburger.svg" alt="Kiwi standing on oval">-->

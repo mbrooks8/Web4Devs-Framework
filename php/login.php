@@ -72,7 +72,7 @@
 			<div class="card center" style="background-color:rgba(0,0,0,0.2);color:white;">
 
 					<div  style="width:30%;display:inline-block;">
-						<?php include("../drawingTest.html"); ?>
+						<?php include("../img/icon.html"); ?>
 					</div>
 
 				<form action="./sessionManager.php" method="POST">
