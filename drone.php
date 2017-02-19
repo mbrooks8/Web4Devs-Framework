@@ -37,7 +37,7 @@ include("topNav.php");
 		<div class="shittyAddBanner valign">
 			<div class="row valign" style="width:100%;">
 				<div class="col s2" style="height:100%;">
-					<?php include("drawingTest.html"); ?>
+					<?php include("/img/icon.html"); ?>
 				</div>
 				<div class="col s8">
 					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Underfunded</span></h4>
@@ -163,7 +163,7 @@ include("topNav.php");
 			<div class="col s12 m4 center">
 				<a href="https://www.foreverfpv.com/product/kiss-32bit-flight-controller-v1-06/">
 					<div class="imgcard">
-						<img src="https://oscarliang.com/ctt/uploads/2016/03/kiss-fc-flight-controller-top-3-1024x682.jpg">
+						<img class="editable" id="imagetest" src="https://oscarliang.com/ctt/uploads/2016/03/kiss-fc-flight-controller-top-3-1024x682.jpg">
 						<p>KISS 24A Flight Controller
 						</p>
 
