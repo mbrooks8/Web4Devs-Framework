@@ -83,6 +83,12 @@ nav {
 	&.fixed{
 		position: fixed;
 		top:0px;
+		background-color:$nav-color;
 
+	}
+	&.bottom{
+		bottom:0px;
+		background-color:$nav-color;
+		position:fixed;
 	}
 }
