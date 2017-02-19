@@ -9,9 +9,9 @@ if(in_array($_POST["username"],$users)){
     echo "<script>alert('hello')</script>";
     echo "<script>alert('".$_SESSION["username"]."')</script>";
     echo $_SESSION["username"];
-    header('Location: ./drone.php');
+    header('Location: ../drone.php');
 }else
 {
-     header('Location: ./login.php');
+     header('Location: ../login.php');
 }
 ?>
