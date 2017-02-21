@@ -20,9 +20,9 @@ function userExecute(myfunction)
     });
 }
 function loadUserFunctions(){
-    var css='<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
+  //  var css='<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
     $.getScript("./js/editContent.js");
-    $("head").append(css);
+ //   $("head").append(css);
 }
 loadUserFunctions();
 

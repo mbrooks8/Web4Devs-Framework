@@ -1,0 +1,37 @@
+.editButton,.submitButton
+{
+	font-size:18px;
+	position: absolute !important;
+	top: -25px !important;
+	right: -5px !important;
+	height: 35px !important;
+	width: 35px !important;
+	opacity: .8;
+	background-color:$button-floating-color;
+	color:#ffffff;
+	border-radius: 50% !important;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30) !important;
+	text-align: center;
+	display: block;
+	div
+	{
+		position: relative;
+		height: 26px;
+		width: 26px;
+		i
+		{
+			position: absolute;
+			top: 9px;
+			left: 10px;
+		}
+	}
+	&:hover{
+			opacity: .9;
+			background-color: $button-floating-background-hover;
+			@extend .z-depth-1-half;
+		}
+}
+.editable
+{
+	position:relative;
+}
