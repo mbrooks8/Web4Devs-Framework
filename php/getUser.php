@@ -1,11 +1,9 @@
 <?php
-
-session_start();
-if(isset($_SESSION['username']))
+include('isLogged.php');
+if(isLogged())
 {
     echo 1;
 }else{
     echo 0;
 }
-
 ?>

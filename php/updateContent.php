@@ -1,4 +1,9 @@
+<?php include('isLogged.php');?>
 <?php
+if(isLogged == 0)
+{
+    header( 'Location: ./login.php' );
+}
 $id = $_GET["id"];
 $content = $_GET["content"];
 

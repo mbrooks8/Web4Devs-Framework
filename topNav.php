@@ -30,7 +30,7 @@ session_start();
 							echo $_SESSION['username'];
 						}
 						?>
-						<a class="button raised" href="logout.php">logout</a>
+						<a class="button raised" href="./php/logout.php">logout</a>
 					</span>
 				</div>
 				<div class="sideBody">

@@ -2,15 +2,22 @@
 include("topNav.php");
 ?>
 <div class="banner">
+<<<<<<< HEAD
 	<div class="imgDiv valign">
 		<div class="imgOverlay"></div>
 		<img src="http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg">
+=======
+	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+	<div class="valign content">
+>>>>>>> origin/master
 		<div class="container">
 			<p><span class="secondary">Revolutionizing</span> Sports and Technology</p>
 			<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Drone</h1>
 			<p>Bringing <span class="secondary">Skill and Precision</span> to The<span class="secondary"> Next Level</span></p>
 		</div>
 	</div>
+	<div class="imgDiv"style="background: url(http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg)"></div>
+
 	<a class="button floating"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
 </div>
 
@@ -48,9 +55,9 @@ include("topNav.php");
 	</div>
 </div>
 
-<div class="valign imgSection">
-	<img src="http://blog.dronetrest.com/content/images/2016/05/helipal-com-storm-racing-drone-f1.jpg">
-	<div>
+<div class="imgSection">
+	<div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
+	<div class="valign">
 		<h1 class="white-text">Drone Love Forever</h1>
 	</div>
 </div>
@@ -104,9 +111,9 @@ include("topNav.php");
 	}
 </style>
 
-<div class="valign imgSection">
-	<img src="http://www.multivu.com/players/English/7923151-broadcast-media-announcement/image/drl-2016-season-is-here-2-HR.jpg">
-	<div>
+<div class="imgSection">
+	<div class="imgDiv" style="background: url(http://www.multivu.com/players/English/7923151-broadcast-media-announcement/image/drl-2016-season-is-here-2-HR.jpg)"></div>
+	<div class="valign">
 		<h1 class="white-text">YOUR Drone, YOUR way</h1>
 	</div>
 </div>
@@ -184,9 +191,9 @@ include("topNav.php");
 		</div>
 	</div>
 </div>
-<div class="valign imgSection">
-	<img src="http://www.realclearlife.com/wp-content/uploads/2016/09/GettyImages-539178636.jpg">
-	<div>
+<div class="imgSection">
+	<div class="imgDiv" style="background: url(http://www.realclearlife.com/wp-content/uploads/2016/09/GettyImages-539178636.jpg)"></div>
+	<div class="valign">
 		<h1 class="white-text">Show Off Your Skills</h1>
 	</div>
 </div>

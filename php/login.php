@@ -6,9 +6,9 @@
 		<title>Starter Template - Poverty</title>
 
 		<!-- CSS  -->
-		<link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<script src="./js/poverty.js" async></script>
+		<link href="../css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="../css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<script src="../js/poverty.js" async></script>
 	</head>
 
 	<body class="Site">
@@ -72,7 +72,7 @@
 			<div class="card center" style="background-color:rgba(0,0,0,0.2);color:white;">
 
 					<div  style="width:30%;display:inline-block;">
-						<?php include("drawingTest.html"); ?>
+						<?php include("../drawingTest.html"); ?>
 					</div>
 
 				<form action="./sessionManager.php" method="POST">
