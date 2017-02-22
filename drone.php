@@ -1,15 +1,9 @@
 <?php
-include("topNav.php");
+include("/php/template/topNav.php");
 ?>
 <div class="banner">
-<<<<<<< HEAD
-	<div class="imgDiv valign">
-		<div class="imgOverlay"></div>
-		<img src="http://www.multivu.com/players/English/7728251-drl-the-drone-racing-league/image/fpv-drone-tech-2-HR.jpg">
-=======
 	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
 	<div class="valign content">
->>>>>>> origin/master
 		<div class="container">
 			<p><span class="secondary">Revolutionizing</span> Sports and Technology</p>
 			<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Drone</h1>
@@ -26,7 +20,7 @@ include("topNav.php");
 		<div class="row">
 			<h4 class="center editable" id="racingHead">• FPV Racing •</h4>
 
-			<h5 class="primary center editable hoverable" id="racingSubHead">
+			<h5 class="primary center editable" id="racingSubHead">
 				FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
 			<br>
 
@@ -43,7 +37,7 @@ include("topNav.php");
 		<div class="shittyAddBanner valign">
 			<div class="row valign" style="width:100%;">
 				<div class="col s2" style="height:100%;">
-					<?php include("drawingTest.html"); ?>
+					<?php include("/img/icon.html"); ?>
 				</div>
 				<div class="col s8">
 					<h4 class="white-text">Hire Us<br><span class="secondary">We Are Underfunded</span></h4>
@@ -169,7 +163,7 @@ include("topNav.php");
 			<div class="col s12 m4 center">
 				<a href="https://www.foreverfpv.com/product/kiss-32bit-flight-controller-v1-06/">
 					<div class="imgcard">
-						<img src="https://oscarliang.com/ctt/uploads/2016/03/kiss-fc-flight-controller-top-3-1024x682.jpg">
+						<img class="editable" id="imagetest" src="https://oscarliang.com/ctt/uploads/2016/03/kiss-fc-flight-controller-top-3-1024x682.jpg">
 						<p>KISS 24A Flight Controller
 						</p>
 
@@ -213,4 +207,4 @@ include("topNav.php");
 		</p>
 	</div>
 </div>
-<?php include("botNav.php"); ?>
+<?php include("/php/template/botNav.php"); ?>
