@@ -1,3 +1,1 @@
-<?php
-test
-?>
+<?php `git pull`;?>
