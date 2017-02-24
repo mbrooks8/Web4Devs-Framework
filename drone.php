@@ -21,7 +21,7 @@ include("/php/template/topNav.php");
 			<h4 class="center editable" id="racingHead">• FPV Racing •</h4>
 
 			<h5 class="primary center editable" id="racingSubHead">
-				FPV racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
+				test racing is an exciting new sport that combines high-tech drones and high-speed racing.</h5>
 			<br>
 
 			<div class="col s12 m4">
