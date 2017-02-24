@@ -23,6 +23,7 @@ function editWindow(elem)
         },
         success: function(data) {
             elem.attr('contenteditable', 'true');
+            elem.attr('spellcheck', 'true');
             elem.focus();
             var myElem = elem;
             elem.on('keyup',function(e){
@@ -46,7 +47,7 @@ function editWindow(elem)
             });
         },
         error: function(e) {
-            alert("oops")
+            console.log("oops")
         }
     });
 }
@@ -54,6 +55,7 @@ function editWindow(elem)
 function updateData(elem)
 {
     elem.attr('contenteditable', 'false');
+    elem.attr('spellcheck', 'false');
     var str = elem[0].innerHTML;
     str = str.replace(/"/g, "'")
     $.ajax({
@@ -68,7 +70,7 @@ function updateData(elem)
             getContent(elem);
         },
         error: function(e) {
-            alert("oops");
+            console.log("oops");
         }
     });
 }

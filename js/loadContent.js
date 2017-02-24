@@ -20,9 +20,7 @@ function userExecute(myfunction)
     });
 }
 function loadUserFunctions(){
-  //  var css='<link href="./css/editable.css" type="text/css" rel="stylesheet" media="screen,projection"/>';
     $.getScript("./js/editContent.js");
- //   $("head").append(css);
 }
 loadUserFunctions();
 
@@ -51,7 +49,7 @@ function getContent(elem)
             userExecute(function(){addEditButton(elem)} );
         },
         error: function(e) {
-            alert("oops");
+            console.log("oops");
         }
     });
 }
