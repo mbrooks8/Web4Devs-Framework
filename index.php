@@ -1,5 +1,5 @@
 <?php
-include("/php/template/topNav.php");
+include("./php/template/topNav.php");
 ?>
 <div class="banner">
 	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
@@ -39,7 +39,7 @@ include("/php/template/topNav.php");
 			<div class="shittyAddBanner valign">
 				<div class="row valign" style="width:100%;">
 					<div class="col s2" style="height:100%;">
-						<?php include("/img/icon.html"); ?>
+						<?php include("./img/icon.html"); ?>
 					</div>
 					<div class="col s8">
 						<h4 class="white-text editable" id="hireus">Hire Us<br><span class="secondary">We Are Poor</span></h4>
@@ -93,4 +93,4 @@ include("/php/template/topNav.php");
 		text-shadow: 1px 1px 8px #000000;
 	}
 </style>
-<?php include("/php/template/botNav.php"); ?>
+<?php include("./php/template/botNav.php"); ?>
