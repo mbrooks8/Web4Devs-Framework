@@ -1,3 +1,3 @@
 <?php
-exec("git pull");
+echo "you pulled";
 ?>
