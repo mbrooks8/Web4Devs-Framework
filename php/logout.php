@@ -11,7 +11,7 @@ session_start();
 
         // destroy the session
         session_destroy();
-        header('Location: ../drone.php');
+        header('Location: ../index.php');
         ?>
     </body>
 </html>

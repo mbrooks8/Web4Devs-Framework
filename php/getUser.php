@@ -1,5 +1,5 @@
 <?php
-include('isLogged.php');
+include('./isLogged.php');
 if(isLogged())
 {
     echo 1;
