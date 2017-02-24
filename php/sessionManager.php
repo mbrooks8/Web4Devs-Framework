@@ -12,6 +12,6 @@ if(in_array($_POST["username"],$users)){
     header('Location: ../index.php');
 }else
 {
-     header('Location: ../login.php');
+     header('Location: ./login.php');
 }
 ?>
