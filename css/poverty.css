@@ -2526,6 +2526,7 @@ th {
   font-weight: normal;
   font-size: 5rem;
   color: #f43284;
+  text-shadow: 1px 1px 8px #000000;
 }
 .banner p {
   font-size: 20px;
@@ -2699,12 +2700,12 @@ a {
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 80%;
+    width: "only screen and (min-width : 601px)";
   }
 }
 @media only screen and (min-width: 993px) {
   .container {
-    width: 55%;
+    width: "only screen and (min-width : 993px)";
   }
 }
 .row {
@@ -3371,11 +3372,10 @@ h1 {
 }
 
 h2, h3, h4, h5, h6, p, a {
-  font-family: 'robotoLight';
+  font-family: 'robotoRegular';
 }
 
 p {
-  font-size: 14px;
   margin: 0;
   padding: 0;
 }

@@ -198,11 +198,4 @@ include("./php/template/topNav.php");
 		<h1 class="white-text editable" id="banner1"></h1>
 	</div>
 </div>
-
-
-<style>
-	h1{
-		text-shadow: 1px 1px 8px #000000;
-	}
-</style>
 <?php include("./php/template/botNav.php"); ?>

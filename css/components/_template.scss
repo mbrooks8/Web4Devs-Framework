@@ -126,12 +126,12 @@ a {
 
 @media #{$medium-and-up} {
 	.container {
-		width: 80%;
+		width: $medium-and-up;
 	}
 }
 @media #{$large-and-up} {
 	.container {
-		width: 55%;
+		width: $large-and-up;
 	}
 }
 .row {
