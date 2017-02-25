@@ -115,19 +115,19 @@ include("./php/template/topNav.php");
 						</div>
 
 					</div>
-					<h6 class="editable" id="buttonfloatingbutton">Floating Button</h6>
+					<h6 class="editable black-text" id="buttonfloatingbutton">Floating Button</h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button">Button</div>
 					</div>
-					<h6 class="editable" id="buttonflatbutton">Flat Button</h6>
+					<h6 class="editable black-text" id="buttonflatbutton">Flat Button</h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button raised">Button</div>
 					</div>
-					<h6 class="editable" id="buttonraisedbutton">Raised Button</h6>
+					<h6 class="editable black-text" id="buttonraisedbutton">Raised Button</h6>
 				</div>
 			</div>
 		</div>
