@@ -34,6 +34,11 @@
 	{
 		left: 0;
 	}
+	&.fixed{
+
+		left:0;
+		float:left;
+	}
 }
 .sideHeader
 {

@@ -3242,6 +3242,10 @@ content {
 .sidebar.active {
   left: 0;
 }
+.sidebar.fixed {
+  left: 0;
+  float: left;
+}
 
 .sideHeader {
   width: 100%;
@@ -3371,7 +3375,7 @@ h2, h3, h4, h5, h6, p, a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
