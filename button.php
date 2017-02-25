@@ -134,11 +134,15 @@ include("./php/template/topNav.php");
 
 		<div class="row">
 			<div class="col s12 m4">
-				<p>Choosing button style</p>
-				<p>Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
-				<p>Function: Is it important and ubiquitous enough to be a floating action button?</p>
-				<p>Dimension: Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
-				<p>Layout: Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
+				<p class="editable" id="buttonGroup5">Choosing button style</p>
+				<br>
+				<p class="editable" id="buttonGroup4">Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
+				<br>
+				<p class="editable" id="buttonGroup3"><b>Function:</b> Is it important and ubiquitous enough to be a floating action button?</p>
+				<br>
+				<p class="editable" id="buttonGroup2"><b>Dimension:</b> Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
+				<br>
+				<p class="editable" id="buttonGroup1"><b>Layout:</b> Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
 
 			</div>
 			<div class="col s12 m8">
@@ -147,9 +151,9 @@ include("./php/template/topNav.php");
 				</div>
 			</div>
 		</div>
-
+		<br>
 		<div class="divider"></div>
-
+		<br>
 		<div class="row">
 			<div class="col s12 m4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
@@ -159,7 +163,7 @@ include("./php/template/topNav.php");
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
 			<div class="col s12 m8">
-				<table class="striped highlight">
+				<table class="bordered highlight">
 					<thead>
 						<tr>
 							<th>Context</th>
@@ -184,13 +188,40 @@ include("./php/template/topNav.php");
 			</div>
 		</div><!--end row-->
 
-		<p>How to use</p>
-		<p>Flat</p>
-		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
-		<p>Raised</p>
-		<pre><code class="language-markup"><div class="button raised">Button</div></code></pre>
-		<p>Floating</p>
-		<pre><code class="language-markup"><div class="button floatingg">Button</div></code></pre>
+		<h5>Flat</h5>
+		<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+		<p>Use flat buttons in the following locations:</p>
+		<ul class="editable" id="buttonFlatList">
+			<li>
+				On toolbars
+			</li>
+			<li>
+				In dialogs, to unify the button action with the dialog content
+			</li>
+			<li>
+				Inline, with padding, so the user can easily find them
+			</li>
+		</ul>
+		<div class="button">Button</div>
+		<pre><code class="language-markup">
+		&lt;div class="button">Button&lt;/div>
+		</code></pre>
+
+		<h5>Raised</h5>
+		<p>Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces.</p>
+		<div class="button raised">Button</div>
+		<pre><code class="language-markup">
+		&lt;div class="button raised">Button&lt;/div>
+		</code></pre>
+
+		<h5>Floating</h5>
+		<p>A floating action button is used for a promoted action.</p>
+		<div class="button floatingg">
+			<i class="fa fa-download fa-2x" aria-hidden="true"></i>
+		</div>
+		<pre><code class="language-markup">
+		&lt;div class="button floating">Button&lt;/div>
+		</code></pre>
 
 	</div> <!--End section-->
 </div>
