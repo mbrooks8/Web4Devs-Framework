@@ -115,19 +115,19 @@ include("./php/template/topNav.php");
 						</div>
 
 					</div>
-					<p class="editable" id="buttonfloatingbutton">Floating Button</p>
+					<h6 class="editable" id="buttonfloatingbutton">Floating Button</h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button">Button</div>
 					</div>
-					<p class="editable" id="buttonflatbutton">Flat Button</p>
+					<h6 class="editable" id="buttonflatbutton">Flat Button</h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button raised">Button</div>
 					</div>
-					<p class="editable" id="buttonraisedbutton">Raised Button</p>
+					<h6 class="editable" id="buttonraisedbutton">Raised Button</h6>
 				</div>
 			</div>
 		</div>
@@ -206,14 +206,14 @@ include("./php/template/topNav.php");
 		<pre><code class="language-markup">
 		&lt;div class="button">Button&lt;/div>
 		</code></pre>
-
+<br>
 		<h5>Raised</h5>
 		<p>Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces.</p>
 		<div class="button raised">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button raised">Button&lt;/div>
 		</code></pre>
-
+<br>
 		<h5>Floating</h5>
 		<p>A floating action button is used for a promoted action. By default, the floating button will automattically align to the bottom left of the DIV that it is in.</p>
 		<div class="button floatingg">
