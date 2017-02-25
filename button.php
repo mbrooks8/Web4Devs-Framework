@@ -215,7 +215,7 @@ include("./php/template/topNav.php");
 		</code></pre>
 
 		<h5>Floating</h5>
-		<p>A floating action button is used for a promoted action.</p>
+		<p>A floating action button is used for a promoted action. By default, the floating button will automattically align to the bottom left of the DIV that it is in.</p>
 		<div class="button floatingg">
 			<i class="fa fa-download fa-2x" aria-hidden="true"></i>
 		</div>
