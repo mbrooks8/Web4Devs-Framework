@@ -21,7 +21,7 @@ EOT;
 $allowed_ips = array(
 '73.220.190.' // VZG
 );
-$allowed = false;
+$allowed = true;
 $headers = apache_request_headers();
 if (@$headers["X-Forwarded-For"]) {
     $ips = explode(",",$headers["X-Forwarded-For"]);
