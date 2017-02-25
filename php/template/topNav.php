@@ -50,7 +50,7 @@ session_start();
 			</div>
 
 			<script>
-				$(document).onload( function(){
+				document.onload( function(){
 					var x=($(document).scrollTop() / 100);
 					if (x>0.9) {
 						x=0.9;
