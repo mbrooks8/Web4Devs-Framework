@@ -182,11 +182,12 @@ include("./php/template/topNav.php");
 
 		<p>How to use</p>
 		<p>Flat</p>
-		<pre class="language-markup"><code class="language-markup"><div class="button">Button</div></code></pre>
+		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
 		<p>Raised</p>
-		<pre class="language-markup"><code class="language-markup"><div class="button">Button</div></code></pre>
-		<p>Floating</p>
-		<pre class="language-markup"><code class="language-markup"><div class="button">Button</div></code></pre>
+		<pre><code class="language-markup"><div class="button raised">Button</div></code></pre>
+				<p>Floating</p>
+		<pre><code class="language-markup"><div class="button floatingg">Button</div></code></pre>
+
 
 	</div> <!--End section-->
 </div>
