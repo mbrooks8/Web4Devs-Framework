@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -50,6 +50,14 @@ session_start();
 			</div>
 
 			<script>
+				$(document).onload( function(){
+					var x=($(document).scrollTop() / 100);
+					if (x>0.9) {
+						x=0.9;
+					}
+					$('.navbar').css('background', 'rgba(70,40,125,' + x + ')');
+				});
+
 				$(document).on('scroll', function (e) {
 					var x=($(document).scrollTop() / 100);
 					if (x>0.9) {
