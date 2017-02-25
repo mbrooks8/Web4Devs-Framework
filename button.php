@@ -151,9 +151,9 @@ include("./php/template/topNav.php");
 				</div>
 			</div>
 		</div>
-<br>
+		<br>
 		<div class="divider"></div>
-<br>
+		<br>
 		<div class="row">
 			<div class="col s12 m4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
@@ -189,17 +189,22 @@ include("./php/template/topNav.php");
 		</div><!--end row-->
 
 		<p>How to use</p>
-		<p>Flat</p>
+		<h5>Flat</h5>
+		<div class="button">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button">Button&lt;/div>
 		</code></pre>
-		<p>Raised</p>
+		<h5>Raised</h5>
+		<div class="button raised">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button raised">Button&lt;/div>
 		</code></pre>
-		<p>Floating</p>
+		<h5>Floating</h5>
+		<div class="button floatingg">
+			<i class="fa fa-download fa-2x" aria-hidden="true"></i>
+		</div>
 		<pre><code class="language-markup">
-		&lt;div class="button floatingg">Button&lt;/div>
+		&lt;div class="button floating">Button&lt;/div>
 		</code></pre>
 
 	</div> <!--End section-->
