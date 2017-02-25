@@ -181,8 +181,10 @@ include("./php/template/topNav.php");
 		</div><!--end row-->
 
 		<p>How to use</p>
-		<p>raised</p>
-		<pre><code class="language-css">p { color: red }</code></pre>
+		<p>Flat</p>
+		<pre class="language-markup"><code class="language-markup">
+		<div class="button">Button</div></code>
+		</pre>
 
 	</div> <!--End section-->
 </div>
