@@ -14,7 +14,7 @@
 	padding:0px;
 	margin:0px;
 	min-height:80vh;
-	max-height:90vh;
+	max-height:80vh;
 	width:100%;
 	background-color:$primary-color;
 	background-size:100%;
@@ -27,6 +27,11 @@
 	position:relative;
 
 	height:500px;
+
+	&.small{
+		min-height:40vh;
+		max-height:40vh;
+	}
 
 	.imgOverlay{
 		position:absolute;
