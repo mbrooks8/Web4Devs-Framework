@@ -144,7 +144,7 @@ include("./php/template/topNav.php");
 			</div>
 		</div>
 
-		<div class="divider"></div>
+		<div class="hr"></div>
 
 	</div> <!--End section-->
 </div>
