@@ -58,8 +58,6 @@ foreach($commands AS $command){
     $output .= htmlentities(trim($tmp)) . "\n";
     $log  .= "\$ $command\n".trim($tmp)."\n";
 }
-$log .= "\n";
-file_put_contents ('deploy-log.txt',$log,FILE_APPEND);
 echo $output;
 ?>
 </pre>
