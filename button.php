@@ -163,7 +163,7 @@ include("./php/template/topNav.php");
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
 			<div class="col s12 m8">
-				<table class="striped highlight">
+				<table class="bordered highlight">
 					<thead>
 						<tr>
 							<th>Context</th>
@@ -188,18 +188,34 @@ include("./php/template/topNav.php");
 			</div>
 		</div><!--end row-->
 
-		<p>How to use</p>
 		<h5>Flat</h5>
+		<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+		<p>Use flat buttons in the following locations:</p>
+		<ul class="editable" id="buttonFlatList">
+			<li>
+				On toolbars
+			</li>
+			<li>
+				In dialogs, to unify the button action with the dialog content
+			</li>
+			<li>
+				Inline, with padding, so the user can easily find them
+			</li>
+		</ul>
 		<div class="button">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button">Button&lt;/div>
 		</code></pre>
+
 		<h5>Raised</h5>
+		<p>Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces.</p>
 		<div class="button raised">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button raised">Button&lt;/div>
 		</code></pre>
+
 		<h5>Floating</h5>
+		<p>A floating action button is used for a promoted action.</p>
 		<div class="button floatingg">
 			<i class="fa fa-download fa-2x" aria-hidden="true"></i>
 		</div>
