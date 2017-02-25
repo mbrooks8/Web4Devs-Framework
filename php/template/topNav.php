@@ -60,11 +60,6 @@ session_start();
 			</script>
 
 			<style>
-				.navbar {
-					background:rgba(70,40,125,0);
-				}
-			</style>
-			<style>
 				.rotate {
 					transform-origin: 50.05% 58.58%;
 					display:table-cell;
