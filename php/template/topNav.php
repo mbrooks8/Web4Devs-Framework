@@ -50,13 +50,13 @@ session_start();
 			</div>
 
 			<script>
-/*				$(document).on('scroll', function (e) {
+				$(document).on('scroll', function (e) {
 					var x=($(document).scrollTop() / 100);
 					if (x>0.9) {
 						x=0.9;
 					}
 					$('.navbar').css('background', 'rgba(70,40,125,' + x + ')');
-				});*/
+				});
 			</script>
 
 			<style>
@@ -130,9 +130,14 @@ session_start();
 				</a>
 				<!--<img src="/assets/hamburger.svg" alt="Kiwi standing on oval">-->
 				<ul class="right hide-on-med-and-down">
+					<li><a href="./index.php">Home</a></li>
 					<li><a href="#!">PROJECTS</a></li>
 					<li><a href="#!" class="navbutton">DONATE</a></li>
 					<li><a href="./php/login.php">LOGIN</a></li>
+				</ul>
+
+				<ul class="right hide-on-large-only">
+					<li><a href="#" class="sideToggle"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 				</ul>
 
 				<?php

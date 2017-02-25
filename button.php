@@ -142,7 +142,9 @@ include("./php/template/topNav.php");
 
 			</div>
 			<div class="col s12 m8">
-				<img class="responsive-img" src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bx4BSt6jniD7RHFUU2dFdmMtcm8/components_buttons_usage_main.png">
+				<div class="card flat">
+					<img class="responsive-img" src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bx4BSt6jniD7RHFUU2dFdmMtcm8/components_buttons_usage_main.png">
+				</div>
 			</div>
 		</div>
 
@@ -150,12 +152,14 @@ include("./php/template/topNav.php");
 
 		<div class="row">
 			<div class="col s12 m4">
-				<p>usage</p>
-				<p>button types</p>
+				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
+				<br>
+				<p><b>button types</b></p>
+				<br>
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
 			<div class="col s12 m8">
-				<table>
+				<table class="striped highlight">
 					<thead>
 						<tr>
 							<th>Context</th>
@@ -185,17 +189,9 @@ include("./php/template/topNav.php");
 		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
 		<p>Raised</p>
 		<pre><code class="language-markup"><div class="button raised">Button</div></code></pre>
-				<p>Floating</p>
+		<p>Floating</p>
 		<pre><code class="language-markup"><div class="button floatingg">Button</div></code></pre>
 
-
 	</div> <!--End section-->
-</div>
-
-<div class="imgSection">
-	<div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
-	<div class="valign">
-		<h1 class="white-text editable" id="banner1"></h1>
-	</div>
 </div>
 <?php include("./php/template/botNav.php"); ?>
