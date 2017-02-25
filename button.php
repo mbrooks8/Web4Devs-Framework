@@ -197,36 +197,8 @@ include("./php/template/topNav.php");
 		<h1 class="white-text editable" id="banner1"></h1>
 	</div>
 </div>
-<!--PROJECTS AND EVENTS-->
-<div class="container">
-	<div class="section">
-		<h4 class="center editable" id="quadHead"></h4>
 
-		<h5 class="primary center editable" id="quadSubHead"></h5>
-		<br>
-		<div class="row">
-			<p>An FPV racing quadcopter is made up of the following parts:</p>
-			<div class="col s12 m6" >
-				<ul class="editable" id="list1">
-				</ul>
-			</div>
-			<div class="col s12 m6">
-				<ul class="editable" id="list2">
-				</ul>
-			</div>
-			<p>You'll want to buy a lot of spare props. It also doesn't hurt to have spare batteries, motors and ESCs if you want to avoid waiting around for replacement parts after a crash.
-			</p>
-			<br>
-			<p>To build and maintain a quadcopter you'll also need some tools, such as:</p>
-			<ul>
-				<li>LiPo charger</li>
-				<li>Soldering iron</li>
-			</ul>
-			<p>The parts you choose will depend mostly on your budget. To see what parts we recommend, check out the Equipment section later in this guide.</p>
-		</div>
 
-	</div>
-</div>
 <style>
 	h1{
 		text-shadow: 1px 1px 8px #000000;
