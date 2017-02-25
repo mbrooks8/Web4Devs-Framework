@@ -32,7 +32,7 @@ include("./php/template/topNav.php");
 						min-height: 256px;
 					}
 				</style>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<style>
 							.button {
@@ -117,13 +117,13 @@ include("./php/template/topNav.php");
 					</div>
 					<p class="editable" id="buttonfloatingbutton">Floating Button</p>
 				</div>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button">Button</div>
 					</div>
 					<p class="editable" id="buttonflatbutton">Flat Button</p>
 				</div>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button raised">Button</div>
 					</div>
