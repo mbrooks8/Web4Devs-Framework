@@ -134,11 +134,15 @@ include("./php/template/topNav.php");
 
 		<div class="row">
 			<div class="col s12 m4">
-				<p>Choosing button style</p>
-				<p>Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
-				<p>Function: Is it important and ubiquitous enough to be a floating action button?</p>
-				<p>Dimension: Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
-				<p>Layout: Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
+				<p class="editable" id="buttonGroup5">Choosing button style</p>
+				<br>
+				<p class="editable" id="buttonGroup4">Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
+				<br>
+				<p class="editable" id="buttonGroup3"><b>Function:</b> Is it important and ubiquitous enough to be a floating action button?</p>
+				<br>
+				<p class="editable" id="buttonGroup2"><b>Dimension:</b> Choose raised or flat depending on the container it will be in and how many z-space layers you have on screen. There should not be many layers of objects on the screen.</p>
+				<br>
+				<p class="editable" id="buttonGroup1"><b>Layout:</b> Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
 
 			</div>
 			<div class="col s12 m8">
@@ -147,9 +151,9 @@ include("./php/template/topNav.php");
 				</div>
 			</div>
 		</div>
-
+<br>
 		<div class="divider"></div>
-
+<br>
 		<div class="row">
 			<div class="col s12 m4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
