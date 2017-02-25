@@ -1,6 +1,8 @@
 <?php
 include("./php/template/topNav.php");
 ?>
+<link href="./css/prism.css" rel="stylesheet" />
+<script src="./js/prism.js"></script>
 <div class="banner small">
 	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
 	<div class="valign content">
@@ -144,7 +146,43 @@ include("./php/template/topNav.php");
 			</div>
 		</div>
 
-		<div class="hr"></div>
+		<div class="divider"></div>
+
+		<div class="row">
+			<div class="col s12 m4">
+				<p>usage</p>
+				<p>button types</p>
+				<p>The type of button used should be suited to the context in which it appears.</p>
+			</div>
+			<div class="col s12 m8">
+				<table>
+					<thead>
+						<tr>
+							<th>Context</th>
+							<th>Button type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Dialogs</td>
+							<td>Use flat buttons in dialogs.</td>
+						</tr>
+						<tr>
+							<td>Inline</td>
+							<td>Depending on your layout, use raised buttons or flat buttons for inline buttons.</td>
+						</tr>
+						<tr>
+							<td>Persistent availability</td>
+							<td>If your app requires actions to be persistent and readily available to the user, consider using the floating action button or persistent footer buttons.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!--end row-->
+
+		<p>How to use</p>
+		<p>raised</p>
+		<pre><code class="language-css">p { color: red }</code></pre>
 
 	</div> <!--End section-->
 </div>
