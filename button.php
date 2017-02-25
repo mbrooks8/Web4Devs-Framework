@@ -185,8 +185,7 @@ include("./php/template/topNav.php");
 		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
 		<p>Raised</p>
 		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
-		<p>Floating</p>
-		<pre><code class="language-markup"><div class="button">Button</div></code></pre>
+
 
 	</div> <!--End section-->
 </div>
