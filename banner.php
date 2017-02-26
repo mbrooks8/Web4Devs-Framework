@@ -32,34 +32,46 @@ include("./php/template/topNav.php");
 	<div class="row">
 		<div class="col s12 m3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative;">
-				<div class="banner" style="min-height:80% !important; height:80% !important;">
-					<a class="button floating"></a>
+				<div class="banner" style="min-height:60% !important; height:60% !important;">
+					<a style="height:30px; width:30px; bottom:-15px!important;" class="button floating"></a>
 				</div>
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Default Banner</p>
 		</div>
 		<div class="col s12 m3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative;">
-				<div class="banner small" style="min-height:40% !important; height:40% !important;">
+				<div class="banner small" style="min-height:30% !important; height:30% !important;">
 
-					<a class="button floating"></a>
+					<a style="height:30px; width:30px; bottom:-15px!important;" class="button floating"></a>
 				</div>
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Small Banner</p>
 		</div>
 		<div class="col s12 m3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative; padding-top:40%;">
-				<div class="banner small" style=" min-height:60% !important; height:60% !important;">
+				<div class="banner small" style=" min-height:40% !important; height:40% !important;">
 				</div>
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Image Banner</p>
 		</div>
 		<div class="col s12 m3">
-			<div style="height:450px; background-color:#EEEEEE; position:relative; padding-top:40%;">
-				<div class="banner small" style=" min-height:60% !important; height:60% !important;">
+			<div style="height:450px; background-color:#EEEEEE; position:relative; padding-top:70%;">
+				<div class="shittyBanner">
 				</div>
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Shitty Banner</p>
+		</div>
+	</div>
+
+	<div class="shittyBanner valign">
+		<div class="row valign" style="width:100%;">
+			<div class="col s2" style="height:100%;">
+				<?php include("./img/icon.html"); ?>
+			</div>
+			<div class="col s8">
+				<h4 class="white-text" id="hireus">Hire Us<br><span class="secondary">We Are Poor</span></h4>
+			</div>
+			<div class="button raised"><a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please</a></div>
 		</div>
 	</div>
 
@@ -117,9 +129,67 @@ include("./php/template/topNav.php");
 		</div>
 	</div><!--end row-->
 
+	<!--EXAMPLES GO HERE -->
 	<h5>Default Banner</h5>
-		<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
-		<p>Use flat buttons in the following locations:</p>
+	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+	<p>Use flat buttons in the following locations:</p>
+
+	<pre><code class="language-markup">
+&lt;div class="banner">
+	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
+	&lt;div class="valign content">
+		&lt;div class="container">
+			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
+			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
+			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+&lt;/div>
+		</code></pre>
+	<br>
+
+	<h5>Small Banner</h5>
+	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+	<p>Use flat buttons in the following locations:</p>
+
+	<pre><code class="language-markup">
+&lt;div class="banner">
+	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
+	&lt;div class="valign content">
+		&lt;div class="container">
+			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
+			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
+			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+&lt;/div>
+		</code></pre>
+
+	<br>
+	<h5>Image Banner</h5>
+	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+	<p>Use flat buttons in the following locations:</p>
+
+	<pre><code class="language-markup">
+&lt;div class="banner">
+	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
+	&lt;div class="valign content">
+		&lt;div class="container">
+			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
+			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
+			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+&lt;/div>
+		</code></pre>
+
+	<br>
+	<h5>Shitty Banner</h5>
+	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
+	<p>Use flat buttons in the following locations:</p>
 
 	<pre><code class="language-markup">
 &lt;div class="banner">
