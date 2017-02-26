@@ -3148,6 +3148,7 @@ body {
 }
 
 .site-content {
+  position: relative;
   transition: margin-left 0.5s ease;
 }
 

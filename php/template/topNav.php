@@ -24,6 +24,7 @@ session_start();
     </style>
 	</head>
 	<body>
+<<<<<<< HEAD
 		<div class="sidebar fixed" id="side">
 			<div class="sideHeader" style="text-align:center;">
 
@@ -44,6 +45,10 @@ session_start();
 			</div>
 		</div>
 		<div class="site-content" style="margin-left:245px!important">
+=======
+
+		<div class="site-content" >
+>>>>>>> origin/master
 
 			<script>
 				window.onload = function(){
