@@ -2560,19 +2560,19 @@ th {
   }
 }
 
-.imgSection {
+.imgBanner {
   overflow: hidden;
   min-height: 500px;
   position: relative;
 }
-.imgSection .imgDiv {
+.imgBanner .imgDiv {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
 }
-.imgSection div {
+.imgBanner div {
   height: 100%;
   width: 100%;
   top: 0px;

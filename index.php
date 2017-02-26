@@ -51,7 +51,7 @@ include("./php/template/topNav.php");
 	</div>
 </div>
 
-<div class="imgSection">
+<div class="imgBanner">
 	<div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
 	<div class="valign">
 		<h1 class="white-text editable" id="banner1">Drone Love Forever</h1>

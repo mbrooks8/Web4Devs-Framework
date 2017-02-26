@@ -32,7 +32,7 @@ include("./php/template/topNav.php");
 						min-height: 256px;
 					}
 				</style>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<style>
 							.button {
@@ -115,26 +115,26 @@ include("./php/template/topNav.php");
 						</div>
 
 					</div>
-					<p class="editable" id="buttonfloatingbutton">Floating Button</p>
+					<h6 class="editable black-text" id="buttonfloatingbutton"><b>Floating Button</b></h6>
 				</div>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button">Button</div>
 					</div>
-					<p class="editable" id="buttonflatbutton">Flat Button</p>
+					<h6 class="editable black-text" id="buttonflatbutton"><b>Flat Button</b></h6>
 				</div>
-				<div class="col s12 m3 l4 ">
+				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button raised">Button</div>
 					</div>
-					<p class="editable" id="buttonraisedbutton">Raised Button</p>
+					<h6 class="editable black-text" id="buttonraisedbutton"><b>Raised Button</b></h6>
 				</div>
 			</div>
 		</div>
-
+<br>
 		<div class="row">
 			<div class="col s12 m4">
-				<p class="editable" id="buttonGroup5">Choosing button style</p>
+				<h5 class="primary center editable" id="buttonChoosingButtonSTyle">Choosing Button Style</h5>
 				<br>
 				<p class="editable" id="buttonGroup4">Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
 				<br>
@@ -158,7 +158,7 @@ include("./php/template/topNav.php");
 			<div class="col s12 m4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
 				<br>
-				<p><b>button types</b></p>
+				<p><b>Button Types</b></p>
 				<br>
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
@@ -206,16 +206,16 @@ include("./php/template/topNav.php");
 		<pre><code class="language-markup">
 		&lt;div class="button">Button&lt;/div>
 		</code></pre>
-
+<br>
 		<h5>Raised</h5>
 		<p>Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces.</p>
 		<div class="button raised">Button</div>
 		<pre><code class="language-markup">
 		&lt;div class="button raised">Button&lt;/div>
 		</code></pre>
-
+<br>
 		<h5>Floating</h5>
-		<p>A floating action button is used for a promoted action.</p>
+		<p>A floating action button is used for a promoted action. By default, the floating button will automattically align to the bottom left of the DIV that it is in.</p>
 		<div class="button floatingg">
 			<i class="fa fa-download fa-2x" aria-hidden="true"></i>
 		</div>
