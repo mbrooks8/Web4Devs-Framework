@@ -21,6 +21,14 @@
 }
 .sidebar
 {
+
+}
+.site-content.fixed
+{
+	transition:margin-left 0.5s ease;
+}
+.sidebar
+{
 	@extend .z-depth-1;
 	transition: left 0.5s ease;
 	position: fixed;
@@ -31,14 +39,21 @@
 	z-index: 998;
 	display: flex;
 	flex-direction: column;
-	&.active
-	{
-		left: 0;
+	@media screen and (max-width: 680px) {
+		&.active
+		{
+			left:0px !important;
+		}
+		&.fixed
+		{
+			left:-245px;
+		}
 	}
-	&.fixed{
-
-		left:0;
-		float:left;
+	@media screen and (min-width: 680px) {
+		&.fixed
+		{
+			left: 0px;
+		}
 	}
 }
 .sideHeader

@@ -82,6 +82,12 @@ body {
 .site-content {
 	position: relative;
 	transition: margin-left 0.5s ease;
+	@media screen and (min-width: 680px) {
+		&.fixed
+		{
+			margin-left: 245px;
+		}
+	}
 }
 
 /*Utility Classes*/
