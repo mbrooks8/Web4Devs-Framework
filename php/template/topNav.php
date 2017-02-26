@@ -43,7 +43,7 @@ session_start();
 				</ul>
 			</div>
 		</div>
-		<div class="site-content">
+		<div class="site-content" style="margin-left:245px!important">
 
 			<script>
 				window.onload = function(){
