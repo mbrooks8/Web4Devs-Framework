@@ -3151,6 +3151,11 @@ body {
   position: relative;
   transition: margin-left 0.5s ease;
 }
+@media screen and (min-width: 680px) {
+  .site-content.fixed {
+    margin-left: 245px;
+  }
+}
 
 /*Utility Classes*/
 .hide {
@@ -3231,6 +3236,10 @@ body {
   pointer-events: none;
 }
 
+.site-content.fixed {
+  transition: margin-left 0.5s ease;
+}
+
 .sidebar {
   transition: left 0.5s ease;
   position: fixed;
@@ -3242,12 +3251,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-.sidebar.active {
-  left: 0;
+@media screen and (max-width: 680px) {
+  .sidebar.active {
+    left: 0px !important;
+  }
+  .sidebar.fixed {
+    left: -245px;
+  }
 }
-.sidebar.fixed {
-  left: 0;
-  float: left;
+@media screen and (min-width: 680px) {
+  .sidebar.fixed {
+    left: 0px;
+  }
 }
 
 .sideHeader {
@@ -3832,3 +3847,5 @@ td, th {
 .editable {
   position: relative;
 }
+
+/*# sourceMappingURL=poverty.css.map */
