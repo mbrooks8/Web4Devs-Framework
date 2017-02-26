@@ -21,23 +21,15 @@ session_start();
             position: fixed;
             left: 0;
         }
-        .content
-        {
-            position: relative;
-        }
     </style>
 	</head>
 	<body>
 		<div class="sidebar fixed" id="side">
 			<div class="sideHeader" style="text-align:center;">
-				<img  style="width:60%; margin:auto;display:block"src="img/sloth.jpg">
-				<br>
-				<span >Welcome:
-					<a class="button raised" href="./php/logout.php">logout</a>
-				</span>
+
 			</div>
 			<div class="sideBody">
-				<ul class="sideToggle">
+				<ul>
 					<li>
 						<a href="#">Home</a>
 					</li>
@@ -51,7 +43,7 @@ session_start();
 				</ul>
 			</div>
 		</div>
-		<div class="site-content">
+		<div class="site-content" style="margin-left:245px!important">
 
 			<script>
 				window.onload = function(){
