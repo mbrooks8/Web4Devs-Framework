@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="sideBody">
-                <ul class="sideToggle">
+                <ul >
                     <li>
                         <a href="#welcome">About Us</a>
                     </li>
