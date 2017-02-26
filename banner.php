@@ -63,18 +63,6 @@ include("./php/template/topNav.php");
 		</div>
 	</div>
 
-	<div class="shittyBanner valign">
-		<div class="row valign" style="width:100%;">
-			<div class="col s2" style="height:100%;">
-				<?php include("./img/icon.html"); ?>
-			</div>
-			<div class="col s8">
-				<h4 class="white-text" id="hireus">Hire Us<br><span class="secondary">We Are Poor</span></h4>
-			</div>
-			<div class="button raised"><a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please</a></div>
-		</div>
-	</div>
-
 	<div class="row">
 
 		<div class="col s12 m4">
@@ -136,34 +124,32 @@ include("./php/template/topNav.php");
 
 	<pre><code class="language-markup">
 &lt;div class="banner">
-	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
 	&lt;div class="valign content">
 		&lt;div class="container">
-			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
-			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
-			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+			&lt;h1>Test Banner&lt;/h1>
+			&lt;p>Here is a test banner&lt;/p>
 		&lt;/div>
 	&lt;/div>
-	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+	&lt;div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+	&lt;a class="button floating">&lt;i class="fa fa-download fa-2x" aria-hidden="true">&lt;/i>&lt;/a>
 &lt;/div>
 		</code></pre>
 	<br>
 
 	<h5>Small Banner</h5>
-	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
-	<p>Use flat buttons in the following locations:</p>
+	<p>To make a small banner, just add the small class to the banner.</p>
+	<p>Small Banners are great for sub pages.</p>
 
 	<pre><code class="language-markup">
-&lt;div class="banner">
-	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
+&lt;div class="banner small">
 	&lt;div class="valign content">
 		&lt;div class="container">
-			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
-			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
-			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+			&lt;h1>Test Banner&lt;/h1>
+			&lt;p>Here is a test banner&lt;/p>
 		&lt;/div>
 	&lt;/div>
-	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+	&lt;div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+	&lt;a class="button floating">&lt;i class="fa fa-download fa-2x" aria-hidden="true">&lt;/i>&lt;/a>
 &lt;/div>
 		</code></pre>
 
@@ -173,37 +159,28 @@ include("./php/template/topNav.php");
 	<p>Use flat buttons in the following locations:</p>
 
 	<pre><code class="language-markup">
-&lt;div class="banner">
-	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
-	&lt;div class="valign content">
-		&lt;div class="container">
-			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
-			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
-			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
-		&lt;/div>
+&lt;div class="imgBanner">
+	&lt;div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
+	&lt;div class="valign">
+		&lt;h1 class="white-text">test Image Banner&lt;/h1>
 	&lt;/div>
-	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
 &lt;/div>
 		</code></pre>
 
 	<br>
 	<h5>Shitty Banner</h5>
-	<p>Flat buttons are printed on material. They do not lift, but fill with color on press.</p>
-	<p>Use flat buttons in the following locations:</p>
+	<p>It's shit but its good in some places.</p>
+	<p>youll know when to use it</p>
 
 	<pre><code class="language-markup">
-&lt;div class="banner">
-	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
-	&lt;div class="valign content">
-		&lt;div class="container">
-			&lt;p>A &lt;span class="secondary">Front and Backend&lt;/span> Framework&lt;/p>
-			&lt;h1>4Dev&lt;span style="color:white; word-spacing:0;"> • &lt;/span>Welcome&lt;/h1>
-			&lt;p>Made &lt;span class="secondary">By developers&lt;/span> for&lt;span class="secondary"> developers&lt;/span>&lt;/p>
+	&lt;div class="shittyBanner valign">
+		&lt;div class="row valign" style="width:100%;">
+			&lt;div class="col s8">
+				&lt;h4 class="white-text">Hire Us&lt;br>&lt;span class="secondary">We Are Poor&lt;/span>&lt;/h4>
+			&lt;/div>
+			&lt;div class="button raised">&lt;a style="color:white;" href="https://www.linkedin.com/in/michael-brooks-26799693/">Please&lt;/a>&lt;/div>
 		&lt;/div>
 	&lt;/div>
-	&lt;div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)">&lt;/div>
-&lt;/div>
 		</code></pre>
-
 </div>
 <?php include("./php/template/botNav.php"); ?>

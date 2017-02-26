@@ -31,15 +31,15 @@ session_start();
 			<div class="sideBody">
 				<ul>
 					<li>
-						<a href="#">Home</a>
+						<a href="./index.php">About Us</a>
 					</li>
 					<li>
-						<a href="#">About</a>
+						<a href="./example.html">Getting Started</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="./button.php">Button</a>
 					</li>
-					<li><a href="#">Other</a></li>
+					<li><a href="./banner.php">Banner</a></li>
 				</ul>
 			</div>
 		</div>
