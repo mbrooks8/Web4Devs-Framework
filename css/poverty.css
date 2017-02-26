@@ -2465,10 +2465,10 @@ th {
   padding: 0;
 }
 
-.shittyAddBanner {
-  width: 100%;
+.shittyBanner {
+  width: 60%;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #451268;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -3146,7 +3146,7 @@ body {
   flex-direction: column;
 }
 
-site-content {
+.site-content {
   transform: margin-left 0.5s ease;
 }
 
