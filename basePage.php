@@ -36,15 +36,29 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
     <script src="./js/prism.js"></script>
     <script>
-        function updateContent()
+        function updateContent(bttnClick)
         {
             var hash = window.location.hash;
+            if(bttnClick){
+                if(hash =='#'||hash=="#!")
+                {
+                    return 0;
+                }
+            }else
+            {
+                console.log(history);
+                if(hash == "#!")
+                {
+                    history.go(-1);
+                }
+            }
             if(hash =='')
             {
                 hash = 'welcome';
             }else{
                 hash = hash.substr(1);
             }
+
             $.ajax(
                 {url:'./pages/'+hash+'.html',
                  success:function(data){
@@ -71,14 +85,14 @@
         }
 
         window.onhashchange = function(){
-            updateContent();
+            updateContent(true);
         };
         window.onload = function() {
 
             $(".sideToggle").click(function(){
                 $(".sidebar").toggleClass("active");
             });
-            updateContent();
+            updateContent(false);
         };
     </script>
     <script src="./js/loadContent.js" async></script>
