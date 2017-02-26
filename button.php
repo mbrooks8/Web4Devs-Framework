@@ -115,19 +115,19 @@ include("./php/template/topNav.php");
 						</div>
 
 					</div>
-					<h5 class="editable black-text" id="buttonfloatingbutton">Floating Button</h5>
+					<h6 class="editable black-text" id="buttonfloatingbutton"><b>Floating Button</b></h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button">Button</div>
 					</div>
-					<h5 class="editable black-text" id="buttonflatbutton">Flat Button</h5>
+					<h6 class="editable black-text" id="buttonflatbutton"><b>Flat Button</b></h6>
 				</div>
 				<div class="col s12 m4 l4 ">
 					<div class="card flat thing center valign">
 						<div class="button raised">Button</div>
 					</div>
-					<h5 class="editable black-text" id="buttonraisedbutton">Raised Button</h5>
+					<h6 class="editable black-text" id="buttonraisedbutton"><b>Raised Button</b></h6>
 				</div>
 			</div>
 		</div>
@@ -158,7 +158,7 @@ include("./php/template/topNav.php");
 			<div class="col s12 m4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
 				<br>
-				<p><b>button types</b></p>
+				<p><b>Button Types</b></p>
 				<br>
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
