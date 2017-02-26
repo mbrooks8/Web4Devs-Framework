@@ -24,26 +24,8 @@ session_start();
     </style>
 	</head>
 	<body>
-		<div class="sidebar fixed" id="side">
-			<div class="sideHeader" style="text-align:center;">
 
-			</div>
-			<div class="sideBody">
-				<ul>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-					<li><a href="#">Other</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="site-content" style="margin-left:245px!important">
+		<div class="site-content" >
 
 			<script>
 				window.onload = function(){
