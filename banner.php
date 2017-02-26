@@ -30,7 +30,7 @@ include("./php/template/topNav.php");
 	<p>A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.</p>
 	<br>
 	<div class="row">
-		<div class="col s12 m3">
+		<div class="col s12 m6 l3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative;">
 				<div class="banner" style="min-height:60% !important; height:60% !important;">
 					<a style="height:30px; width:30px; bottom:-15px!important;" class="button floating"></a>
@@ -38,7 +38,7 @@ include("./php/template/topNav.php");
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Default Banner</p>
 		</div>
-		<div class="col s12 m3">
+		<div class="col s12 m6 l3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative;">
 				<div class="banner small" style="min-height:30% !important; height:30% !important;">
 
@@ -47,14 +47,14 @@ include("./php/template/topNav.php");
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Small Banner</p>
 		</div>
-		<div class="col s12 m3">
+		<div class="col s12 m6 l3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative; padding-top:40%;">
 				<div class="banner small" style=" min-height:40% !important; height:40% !important;">
 				</div>
 			</div>
 			<p class="black-text" id="bannerfloatingbutton">Image Banner</p>
 		</div>
-		<div class="col s12 m3">
+		<div class="col s12 m6 l3">
 			<div style="height:450px; background-color:#EEEEEE; position:relative; padding-top:70%;">
 				<div class="shittyBanner">
 				</div>
