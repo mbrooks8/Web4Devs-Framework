@@ -24,31 +24,6 @@ session_start();
     </style>
 	</head>
 	<body>
-<<<<<<< HEAD
-		<div class="sidebar fixed" id="side">
-			<div class="sideHeader" style="text-align:center;">
-
-			</div>
-			<div class="sideBody">
-				<ul>
-					<li>
-						<a href="./index.php">About Us</a>
-					</li>
-					<li>
-						<a href="./example.html">Getting Started</a>
-					</li>
-					<li>
-						<a href="./button.php">Button</a>
-					</li>
-					<li><a href="./banner.php">Banner</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="site-content" style="margin-left:245px!important">
-=======
-
-		<div class="site-content" >
->>>>>>> origin/master
 
 			<script>
 				window.onload = function(){
