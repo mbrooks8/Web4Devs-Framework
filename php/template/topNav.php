@@ -16,8 +16,8 @@ session_start();
 
 
 	</head>
-	<body class="Site">
-		<div class="Site-content content">
+	<body>
+		<div class="content">
 			<div class="sidebar" id="side">
 				<div class="overlay sideToggle"></div>
 				<div class="sideHeader" style="text-align:center;">
