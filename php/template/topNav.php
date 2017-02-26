@@ -55,11 +55,7 @@ session_start();
 
 			<script>
 				window.onload = function(){
-					var x=($(document).scrollTop() / 100);
-					if (x>0.9) {
-						x=0.9;
-					}
-					$('.navbar').css('background', 'rgba(70,40,125,' + x + ')');
+					$('.navbar').css('background', 'rgba(70,40,125,0)');
 				};
 
 				$(document).on('scroll', function (e) {
