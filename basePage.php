@@ -20,7 +20,7 @@
             <div class="sideBody">
                 <ul class="sideToggle">
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#welcome">About Us</a>
                     </li>
                     <li><a href="#setup">Getting Started</a></li>
                     <li>
