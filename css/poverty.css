@@ -2472,6 +2472,7 @@ th {
   background-color: #451268;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .banner {
@@ -3831,5 +3832,3 @@ td, th {
 .editable {
   position: relative;
 }
-
-/*# sourceMappingURL=poverty.css.map */

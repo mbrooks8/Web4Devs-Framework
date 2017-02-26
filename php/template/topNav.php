@@ -24,9 +24,26 @@ session_start();
     </style>
 	</head>
 	<body>
+		<div class="sidebar fixed" id="side">
+			<div class="sideHeader" style="text-align:center;">
 
-		<div class="site-content" >
-
+			</div>
+			<div class="sideBody">
+				<ul>
+					<li>
+						<a href="./index.php">About Us</a>
+					</li>
+					<li>
+						<a href="./example.html">Getting Started</a>
+					</li>
+					<li>
+						<a href="./button.php">Button</a>
+					</li>
+					<li><a href="./banner.php">Banner</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="site-content" style="margin-left:245px!important">
 			<script>
 				window.onload = function(){
 					$('.navbar').css('background', 'rgba(70,40,125,0)');
