@@ -16,27 +16,35 @@ include("./php/template/topNav.php");
 	<a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
 </div>
 <div class="container">
-	<p>The primary banner is a full width banner that should be located at the top of the screen</p>
+	<br>
+	<p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
+<br>
+	<div class="col s12">
+				<p>There are three standard types of banners:</p>
+				<ul class="editable" id="bannerList1">
+					<li>Default Banners : </li>
+					<li>Small Banners</li>
+				</ul>
+			</div>
 	<p>A jumbotron indicates a big box for calling extra attention to some special content or information.</p>
 	<p>A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.</p>
-</div>
-<p>Here is an example of a banner</p>
-<div class="container">
+
+	<p>Here is an example of a banner</p>
+
 	<div class="banner">
 		<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
 		<div class="valign content">
 			<div class="container">
-				<p>A <span class="secondary">Front and Backend</span> Framework</p>
-				<h1>4Dev<span style="color:white; word-spacing:0;"> • </span>Welcome</h1>
-				<p>Made <span class="secondary">By developers</span> for<span class="secondary"> developers</span></p>
+				<h1>Example Banner</h1>
+				<p>Here is some more text</p>
 			</div>
 		</div>
-		<div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
+		<div class="imgDiv"style="background-color:#EEEEEE"></div>
 
 		<a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
 	</div>
-</div>
-<pre><code class="language-markup">
+
+	<pre><code class="language-markup">
 &lt;div class="banner">
 	&lt;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&lt;/div>
 	&lt;div class="valign content">
@@ -50,9 +58,9 @@ include("./php/template/topNav.php");
 &lt;/div>
 		</code></pre>
 
-<p> here is a half sized banner</p>
-<p> to make a smaller banner just add the small class</p>
-<div class="container">
+	<p> here is a half sized banner</p>
+	<p> to make a smaller banner just add the small class</p>
+
 	<div class="banner small">
 		<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
 		<div class="valign content">
@@ -65,9 +73,8 @@ include("./php/template/topNav.php");
 
 		<a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
 	</div>
-</div>
-<pre><code class="language-markup">
 
+	<pre><code class="language-markup">
 &ls;div class="banner small">
 	&ls;div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;">&ls;/div>
 	&ls;div class="valign content">
@@ -82,4 +89,5 @@ include("./php/template/topNav.php");
 &ls;/div>
 		</code></pre>
 
+</div>
 <?php include("./php/template/botNav.php"); ?>

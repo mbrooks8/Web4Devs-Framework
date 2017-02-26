@@ -49,7 +49,7 @@ include("/php/template/topNav.php");
 	</div>
 </div>
 
-<div class="imgSection">
+<div class="imgBanner">
 	<div class="imgDiv" style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
 	<div class="valign">
 		<h1 class="white-text">Drone Love Forever</h1>
@@ -105,7 +105,7 @@ include("/php/template/topNav.php");
 	}
 </style>
 
-<div class="imgSection">
+<div class="imgBanner">
 	<div class="imgDiv" style="background: url(http://www.multivu.com/players/English/7923151-broadcast-media-announcement/image/drl-2016-season-is-here-2-HR.jpg)"></div>
 	<div class="valign">
 		<h1 class="white-text">YOUR Drone, YOUR way</h1>
@@ -185,7 +185,7 @@ include("/php/template/topNav.php");
 		</div>
 	</div>
 </div>
-<div class="imgSection">
+<div class="imgBanner">
 	<div class="imgDiv" style="background: url(http://www.realclearlife.com/wp-content/uploads/2016/09/GettyImages-539178636.jpg)"></div>
 	<div class="valign">
 		<h1 class="white-text">Show Off Your Skills</h1>
