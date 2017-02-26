@@ -36,7 +36,7 @@ include("./php/template/topNav.php");
 				<h5 class="editable" id="indexSubheader3"></h5>
 				<p class="editable" id="paragraph3"></p>
 			</div>
-			<div class="shittyAddBanner valign">
+			<div class="shittyBanner valign">
 				<div class="row valign" style="width:100%;">
 					<div class="col s2" style="height:100%;">
 						<?php include("./img/icon.html"); ?>
