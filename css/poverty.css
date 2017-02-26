@@ -3146,8 +3146,8 @@ body {
   flex-direction: column;
 }
 
-content {
-  flex: 1;
+site-content {
+  transform: margin-left 0.5s ease;
 }
 
 /*Utility Classes*/

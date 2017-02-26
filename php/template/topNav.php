@@ -21,10 +21,6 @@ session_start();
             position: fixed;
             left: 0;
         }
-        .content
-        {
-            position: relative;
-        }
     </style>
 	</head>
 	<body>
