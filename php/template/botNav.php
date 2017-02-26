@@ -1,6 +1,4 @@
 
-</div><!-- END CONTENT-->
-
 <footer class="page-footer">
 	<div class="container">
 		<div class="row">
@@ -31,13 +29,39 @@
 		</div>
 	</div>
 </footer>
+</div><!-- END CONTENT-->
+
+
 
 </body>
 <script>
-	$(".sideToggle").click(function(){
-		$(".sidebar").toggleClass("active");
-	})
-</script>
+        window.onload = function() {
+            if($('.sidebar.fixed').length)
+            {
+                $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
+            }
+            $(".sideToggle").click(function(){
+
+                if($('.sidebar.fixed').length)
+                {
+                    if($('.sidebar.fixed').is('.hidden'))
+                    {
+                        $('.sidebar.fixed').removeClass('hidden');
+                        $('.sidebar.fixed').css('left','0px');
+                        $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
+                    }else
+                    {
+                        $('.sidebar.fixed').addClass('hidden');
+                        $('.sidebar.fixed').css('left',-$('.sidebar.fixed').width()+'px');
+                        $('.site-content').css('margin-left','0px');
+                    }
+
+                }else{
+                    $(".sidebar").toggleClass("active");
+                }
+            })
+        };
+    </script>
 <script src="./js/loadContent.js" async></script>
 
 

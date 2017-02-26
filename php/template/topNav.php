@@ -14,49 +14,49 @@ session_start();
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 
+    <style>
 
+        .sidebar-fixed
+        {
+            position: fixed;
+            left: 0;
+        }
+        .content
+        {
+            position: relative;
+        }
+    </style>
 	</head>
 	<body>
-		<div class="content">
-			<div class="sidebar" id="side">
-				<div class="overlay sideToggle"></div>
-				<div class="sideHeader" style="text-align:center;">
-					<img  style="width:60%; margin:auto;display:block"src="img/sloth.jpg">
-					<br>
-					<span >Welcome:
-						<?php
-						if(isset($_SESSION['username']))
-						{
-							echo $_SESSION['username'];
-						}
-						?>
-						<a class="button raised" href="./php/logout.php">logout</a>
-					</span>
-				</div>
-				<div class="sideBody">
-					<ul class="sideToggle">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-						<li><a href="#">Other</a></li>
-					</ul>
-				</div>
+		<div class="sidebar fixed" id="side">
+			<div class="sideHeader" style="text-align:center;">
+				<img  style="width:60%; margin:auto;display:block"src="img/sloth.jpg">
+				<br>
+				<span >Welcome:
+					<a class="button raised" href="./php/logout.php">logout</a>
+				</span>
 			</div>
+			<div class="sideBody">
+				<ul class="sideToggle">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li><a href="#">Other</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="site-content">
 
 			<script>
-				document.onload( function(){
-					var x=($(document).scrollTop() / 100);
-					if (x>0.9) {
-						x=0.9;
-					}
-					$('.navbar').css('background', 'rgba(70,40,125,' + x + ')');
-				});
+				window.onload = function(){
+					$('.navbar').css('background', 'rgba(70,40,125,0)');
+				};
 
 				$(document).on('scroll', function (e) {
 					var x=($(document).scrollTop() / 100);
