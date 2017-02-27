@@ -3145,6 +3145,7 @@ html {
 body {
   min-height: 100vh;
   flex-direction: column;
+  background: #fefefe;
 }
 
 .site-content {
