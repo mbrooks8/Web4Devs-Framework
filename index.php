@@ -27,13 +27,13 @@
 					<li>
 						<a href="#button">Button</a>
 					</li>
-					<li><a href="#card">card</a></li>
-					<li><a href="#chip">chip</a></li>
-					<li><a href="#color">color</a></li>
-					<li><a href="#navbar">navbar</a></li>
-					<li><a href="table">table</a></li>
-					<li><a href="#template">template</a></li>
-					<li><a href="#utility">utility</a></li>
+					<li><a href="#card">Card</a></li>
+					<li><a href="#chip">Chip</a></li>
+					<li><a href="#color">Color</a></li>
+					<li><a href="#navbar">Navbar</a></li>
+					<li><a href="table">Table</a></li>
+					<li><a href="#template">Template</a></li>
+					<li><a href="#utility">Utility</a></li>
 				</ul>
 			</div>
 		</div>
