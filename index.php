@@ -31,7 +31,7 @@
 					<li><a href="#chip">Chip</a></li>
 					<li><a href="#color">Color</a></li>
 					<li><a href="#navbar">Navbar</a></li>
-					<li><a href="table">Table</a></li>
+					<li><a href="#table">Table</a></li>
 					<li><a href="#template">Template</a></li>
 					<li><a href="#utility">Utility</a></li>
 				</ul>
