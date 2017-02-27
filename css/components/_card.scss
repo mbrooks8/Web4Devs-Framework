@@ -14,9 +14,6 @@ $card-link-color-light: lighten($card-link-color, 20%) !default;
 	.card-title {
 		font-size: 24px;
 		font-weight: 300;
-		&.activator {
-			cursor: pointer;
-		}
 	}
 
 	// Card Sizes
@@ -116,24 +113,6 @@ $card-link-color-light: lighten($card-link-color, 20%) !default;
 			text-transform: uppercase;
 
 			&:hover { color: $card-link-color-light; }
-		}
-	}
-
-	.card-reveal {
-		padding: $card-padding;
-		position: absolute;
-		background-color: $card-bg-color;
-		width: 100%;
-		overflow-y: auto;
-		left: 0;
-		top: 100%;
-		height: 100%;
-		z-index: 3;
-		display: none;
-
-		.card-title {
-			cursor: pointer;
-			display: block;
 		}
 	}
 }
