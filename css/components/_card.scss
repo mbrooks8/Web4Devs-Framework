@@ -1,37 +1,139 @@
-.card
-{
+$card-padding: 24px !default;
+$card-bg-color: #fff !default;
+$card-link-color: color("orange", "accent-2") !default;
+$card-link-color-light: lighten($card-link-color, 20%) !default;
+
+.card {
+	position:relative;
 	@extend .z-depth-1;
 	border-radius: 2px;
-	background-color: white;
-	padding: 10px 20px;
+	margin: $element-top-margin 0 $element-bottom-margin 0;
+	background-color: $card-bg-color;
+	transition: box-shadow .25s;
+
+	.card-title {
+		font-size: 24px;
+		font-weight: 300;
+		&.activator {
+			cursor: pointer;
+		}
+	}
+
+	// Card Sizes
+	&.small, &.medium, &.large {
+		position: relative;
+
+		.card-image {
+			max-height: 60%;
+			overflow: hidden;
+		}
+		.card-image + .card-content {
+			max-height: 40%;
+		}
+		.card-content {
+			max-height: 100%;
+			overflow: hidden;
+		}
+		.card-action {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	&.small {
+		height: 300px;
+	}
+
+	&.medium {
+		height: 400px;
+	}
+
+	&.large {
+		height: 500px;
+	}
 
 	&.flat{
 		@extend .z-depth-0;
 		background-color:#EEEEEE;
 	}
-}
 
-.imgcard
-{
-	position: relative;
-	margin: 0px;
-	padding: 0px;
-	z-index: -1;
-	img
-	{
-		box-shadow: 0px 0px 5px 1px #5F5F5F;
-		border-radius:5px;
-		width: 100%;
+	.card-image {
+		position: relative;
+
+		// Image background for content
+		img {
+			display: block;
+			border-radius: 2px 2px 0 0;
+			position: relative;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.card-title {
+			color: $card-bg-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			max-width: 100%;
+			padding: $card-padding;
+		}
 	}
-	p
-	{
-		border-radius: 5px;
-		padding: 5px 10px;
+
+	.card-content {
+		padding: $card-padding;
+		border-radius: 0 0 2px 2px;
+
+		p {
+			margin: 0;
+			color: inherit;
+		}
+		.card-title {
+			display: block;
+			line-height: 32px;
+			margin-bottom: 8px;
+
+			i {
+				line-height: 32px;
+			}
+		}
+	}
+
+	.card-action {
+		position: relative;
+		background-color: inherit;
+		border-top: 1px solid rgba(160,160,160,.2);
+		padding: 16px $card-padding;
+
+		a:not(.btn):not(.btn-large):not(.btn-floating) {
+			color: $card-link-color;
+			margin-right: $card-padding;
+			transition: color .3s ease;
+			text-transform: uppercase;
+
+			&:hover { color: $card-link-color-light; }
+		}
+	}
+
+	.card-reveal {
+		padding: $card-padding;
 		position: absolute;
-		bottom:10px;
-		left:10px;
-		max-width: calc(100% - 20px);
-		background-color: rgba(0,0,0,0.7);
-		color: white;
+		background-color: $card-bg-color;
+		width: 100%;
+		overflow-y: auto;
+		left: 0;
+		top: 100%;
+		height: 100%;
+		z-index: 3;
+		display: none;
+
+		.card-title {
+			cursor: pointer;
+			display: block;
+		}
 	}
 }
