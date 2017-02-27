@@ -23,10 +23,17 @@
 						<a href="#welcome">About Us</a>
 					</li>
 					<li><a href="#setup">Getting Started</a></li>
+					<li><a href="#banner">Banner</a></li>
 					<li>
 						<a href="#button">Button</a>
 					</li>
-					<li><a href="#banner">Banner</a></li>
+					<li><a href="#card">card</a></li>
+					<li><a href="#chip">chip</a></li>
+					<li><a href="#color">color</a></li>
+					<li><a href="#navbar">navbar</a></li>
+					<li><a href="table">table</a></li>
+					<li><a href="#template">template</a></li>
+					<li><a href="#utility">utility</a></li>
 				</ul>
 			</div>
 		</div>
