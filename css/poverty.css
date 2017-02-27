@@ -2619,10 +2619,6 @@ video.responsive-video {
   height: auto;
 }
 
-img {
-  border-radius: 17px;
-}
-
 a {
   color: #039be5;
   text-decoration: none;
@@ -3518,34 +3514,118 @@ small {
   src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
 }
 .card {
+  position: relative;
   border-radius: 2px;
-  background-color: white;
-  padding: 10px 20px;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+}
+.card .card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+.card .card-title.activator {
+  cursor: pointer;
+}
+.card.small, .card.medium, .card.large {
+  position: relative;
+}
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+  max-height: 60%;
+  overflow: hidden;
+}
+.card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
+  max-height: 40%;
+}
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+  max-height: 100%;
+  overflow: hidden;
+}
+.card.small .card-action, .card.medium .card-action, .card.large .card-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card.small {
+  height: 300px;
+}
+.card.medium {
+  height: 400px;
+}
+.card.large {
+  height: 500px;
 }
 .card.flat {
   background-color: #EEEEEE;
 }
-
-.imgcard {
+.card .card-image {
   position: relative;
-  margin: 0px;
-  padding: 0px;
-  z-index: -1;
 }
-.imgcard img {
-  box-shadow: 0px 0px 5px 1px #5F5F5F;
-  border-radius: 5px;
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 100%;
 }
-.imgcard p {
-  border-radius: 5px;
-  padding: 5px 10px;
+.card .card-image .card-title {
+  color: #fff;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  max-width: calc(100% - 20px);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+}
+.card .card-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+}
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+.card .card-content .card-title {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.card .card-content .card-title i {
+  line-height: 32px;
+}
+.card .card-action {
+  position: relative;
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px 24px;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #ffab40;
+  margin-right: 24px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #ffd8a6;
+}
+.card .card-reveal {
+  padding: 24px;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  overflow-y: auto;
+  left: 0;
+  top: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+.card .card-reveal .card-title {
+  cursor: pointer;
+  display: block;
 }
 
 .button {
@@ -3848,5 +3928,3 @@ td, th {
 .editable {
   position: relative;
 }
-
-/*# sourceMappingURL=poverty.css.map */
