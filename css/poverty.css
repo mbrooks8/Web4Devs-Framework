@@ -3524,9 +3524,6 @@ small {
   font-size: 24px;
   font-weight: 300;
 }
-.card .card-title.activator {
-  cursor: pointer;
-}
 .card.small, .card.medium, .card.large {
   position: relative;
 }
@@ -3610,22 +3607,6 @@ small {
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
   color: #ffd8a6;
-}
-.card .card-reveal {
-  padding: 24px;
-  position: absolute;
-  background-color: #fff;
-  width: 100%;
-  overflow-y: auto;
-  left: 0;
-  top: 100%;
-  height: 100%;
-  z-index: 3;
-  display: none;
-}
-.card .card-reveal .card-title {
-  cursor: pointer;
-  display: block;
 }
 
 .button {
@@ -3928,3 +3909,5 @@ td, th {
 .editable {
   position: relative;
 }
+
+/*# sourceMappingURL=poverty.css.map */

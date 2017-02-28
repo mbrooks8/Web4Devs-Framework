@@ -36,29 +36,8 @@
 </body>
 <script>
         window.onload = function() {
-            if($('.sidebar.fixed').length)
-            {
-                $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
-            }
             $(".sideToggle").click(function(){
-
-                if($('.sidebar.fixed').length)
-                {
-                    if($('.sidebar.fixed').is('.hidden'))
-                    {
-                        $('.sidebar.fixed').removeClass('hidden');
-                        $('.sidebar.fixed').css('left','0px');
-                        $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
-                    }else
-                    {
-                        $('.sidebar.fixed').addClass('hidden');
-                        $('.sidebar.fixed').css('left',-$('.sidebar.fixed').width()+'px');
-                        $('.site-content').css('margin-left','0px');
-                    }
-
-                }else{
                     $(".sidebar").toggleClass("active");
-                }
             })
         };
     </script>
