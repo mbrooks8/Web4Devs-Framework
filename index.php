@@ -57,6 +57,7 @@
 		}
 		function updateContent(bttnClick)
 		{
+			console.log("updating with: "+window.location.hash);
 			var hash = window.location.hash;
 			if(bttnClick){
 				if(hash =='#'||hash=="#!")
@@ -65,7 +66,6 @@
 				}
 			}else
 			{
-				console.log(history);
 				if(hash == "#!")
 				{
 					history.go(-1);
