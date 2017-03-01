@@ -100,6 +100,7 @@
 			updateContent(true);
 		};
 		window.onload = function() {
+			console.log("loaded");
 
 			$(".sideToggle").click(function(){
 				$(".sidebar").toggleClass("active");
