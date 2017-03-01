@@ -43,7 +43,6 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 	<script src="./js/prism.js"></script>
 	<script>
-		var overlay = "<div style='height:100vh;'>Loading</div>";
 		function updatePage(data)
 		{
 			var $target = $('html,body');
@@ -70,6 +69,7 @@
 				if(hash == "#!")
 				{
 					history.go(-1);
+					updateContent(true);
 				}
 			}
 			if(hash =='')
@@ -89,7 +89,6 @@
 					 $.ajax(
 						 {url:'./pages/error.html',
 						  success:function(data){
-							  $("#replace").html(overlay);
 							  $("#replace").fadeOut(401);
 							  setTimeout(function(){updatePage(data);},400);
 						  }

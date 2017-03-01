@@ -34,13 +34,7 @@
 
 
 </body>
-<script>
-        window.onload = function() {
-            $(".sideToggle").click(function(){
-                    $(".sidebar").toggleClass("active");
-            })
-        };
-    </script>
+<script src = "./js/poverty.js"></script>
 <script src="./js/loadContent.js" async></script>
 
 
