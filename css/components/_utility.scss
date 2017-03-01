@@ -25,6 +25,9 @@
 		transform: translateX(-50%);
 	}
 }
+img{
+	pointer-events: none;
+}
 .valign{
 	display: flex;
 	align-items:center;

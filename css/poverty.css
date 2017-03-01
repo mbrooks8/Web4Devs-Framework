@@ -3076,6 +3076,10 @@ a {
   transform: translateX(-50%);
 }
 
+img {
+  pointer-events: none;
+}
+
 .valign {
   display: flex;
   align-items: center;
@@ -3291,7 +3295,7 @@ body {
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color 0.7s ease;
+  transition: background-color 0.2s ease;
 }
 .sideBody li a:hover {
   background-color: #555;
