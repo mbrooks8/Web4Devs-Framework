@@ -105,8 +105,9 @@
 			$(".sideToggle").click(function(){
 				$(".sidebar").toggleClass("active");
 			});
-			updateContent(false);
+
 		};
+		updateContent(false);
 	</script>
 	<script src="./js/loadContent.js" async></script>
 </html>
