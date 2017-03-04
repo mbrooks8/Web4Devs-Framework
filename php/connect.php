@@ -1,7 +1,4 @@
 <?php
-$id = $_GET["id"];
-$content = $_GET["content"];
-
 $servername = "localhost";
 $username = "root";
 $password = "";

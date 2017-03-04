@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web4Dev</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<script src="./js/poverty.js" async></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="sidebar fixed" id="side">
+			<div class="sideHeader" style="text-align:center;">
+				<div class="sideHeader" style="text-align:center;">
+					<h3 class="white-text">web4Dev</h3>
+				</div>
+			</div>
+			<div class="sideBody">
+				<ul >
+					<li>
+						<a href="#welcome">About Us</a>
+					</li>
+					<li><a href="#setup">Getting Started</a></li>
+					<li><a href="#banner">Banner</a></li>
+					<li>
+						<a href="#button">Button</a>
+					</li>
+					<li><a href="#card">Card</a></li>
+					<li><a href="#chip">Chip</a></li>
+					<li><a href="#color">Color</a></li>
+					<li><a href="#navbar">Navbar</a></li>
+					<li><a href="#table">Table</a></li>
+					<li><a href="#template">Template</a></li>
+					<li><a href="#utility">Utility</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="site-content fixed">
+			<div class="editable" id ="asdfasdfasdfffffffffffff"><div>hello</div><a>test</a> </div>
+			Search:
+			<div>
+				<input type="text" name="search" id="searchBar">
+				<div class="sideBody" id="results">
+			</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+	<script>
+
+		$( "#searchBar" ).keyup(function() {
+			updateSearch()
+		});
+
+		function updateSearch(){
+			console.log(document.getElementById('searchBar').value );
+		$.ajax({
+			url: './php/search.php',
+			type: 'POST',
+			data: {
+				"search": ''+document.getElementById('searchBar').value
+			},
+			success: function(data) {
+				$("#results").html(data);
+				console.log(data);
+
+			},
+			error: function(e) {
+				console.log("oops");
+			}
+		});}
+	</script>
+	<script src="./js/loadContent.js" async></script>
+</html>

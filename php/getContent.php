@@ -1,4 +1,7 @@
 <?php
+$id = $_GET["id"];
+$content = $_GET["content"];
+$url = $_GET["url"];
 include("./connect.php");
 
 if ($conn->connect_error) {
@@ -33,8 +36,14 @@ if ($result->num_rows > 0) {
 		$count++;
 	}
 	$content = preg_replace('/(\s\s+)/', '',$content);
+	if($content == '""')
+	{
+		$content='"empty submission"';
+	}
+	$stripped = strip_tags($content);
 
-	$sql = 'INSERT INTO content(id, content) VALUES ('.$id.','.$content.')';
+
+	$sql = 'INSERT INTO content(id, content,strippedContent,page) VALUES ('.$id.','.$content.','.$stripped.','.$url.')';
 	$rez = $conn->query($sql);
 	if($rez){
 		//echo "worked";

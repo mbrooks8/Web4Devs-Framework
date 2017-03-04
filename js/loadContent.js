@@ -35,12 +35,16 @@ editables.each(function(){
 function getContent(elem)
 {
     //console.log("getContent: "+elem[0].innerHTML);
+    var url = window.location.pathname;
+    url = url.substring(url.lastIndexOf('/')+1);
+    console.log(url);
     $.ajax({
         url: './php/getContent.php',
         type: 'GET',
         data: {
             "id": '"'+elem[0].id+'"',
-            "content": '"'+elem[0].innerHTML+'"'
+            "content": '"'+elem[0].innerHTML+'"',
+            "url": '"'+ url+window.location.hash+ '"'
         },
         success: function(data) {
             var out = data;
