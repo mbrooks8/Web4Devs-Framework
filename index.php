@@ -20,6 +20,14 @@
 			<div class="sideBody">
 				<ul >
 					<li>
+						Search:
+						<div>
+							<input autocomplete="off" type="text" name="search" id="searchBar">
+							<!--<div class="sideBody" id="results">
+</div>-->
+						</div>
+					</li>
+					<li>
 						<a href="#welcome">About Us</a>
 					</li>
 					<li><a href="#setup">Getting Started</a></li>
@@ -108,6 +116,39 @@
 
 		};
 		updateContent(false);
+	</script>
+	<script>
+
+		$( "#searchBar" ).parent().focusin(function() {
+			$( this ).parent().append("<div class=\"card\"style=\"margin:0px;width:100%;overflow-y:scroll;position:absolute;max-height:200px;z-index:10000;\" class=\"sideBody\" id=\"results\"></div>");
+			updateSearch()
+		});
+		$("#searchBar").parent().focusout(function(){
+			setTimeout(function(){$("#results").remove();},250)
+
+		});
+		$( "#searchBar" ).keyup(function() {
+			updateSearch()
+		});
+
+		function updateSearch(){
+			console.log(document.getElementById('searchBar').value );
+			$.ajax({
+				url: './php/search.php',
+				type: 'POST',
+				data: {
+					"search": ''+document.getElementById('searchBar').value
+				},
+				success: function(data) {
+					console.log($("#results"));
+					$("#results").html(data);
+					console.log(data);
+
+				},
+				error: function(e) {
+					console.log("oops");
+				}
+			});}
 	</script>
 	<script src="./js/loadContent.js" async></script>
 </html>

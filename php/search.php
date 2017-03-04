@@ -82,7 +82,7 @@ if ($result->num_rows > 0) {
 		}
 	}
 } else {
-	echo"no results found";
+	echo "<li><a>no results found</a></li>";
 }
 echo "</ul>";
 $conn->close();

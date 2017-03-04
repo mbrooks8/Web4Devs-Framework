@@ -16,6 +16,10 @@ if ($conn->connect_error) {
 
 //echo $id;
 //$content = preg_replace('/(\s\s)/', '',$content));
+if($content == '""')
+{
+    $content='"empty submission"';
+}
 $stripped = strip_tags($content);
 $sql = 'UPDATE content SET content = "'.$content.'",strippedContent = "'.$stripped.'",time=NOW() WHERE content.id = "'.$id.'"';
 
