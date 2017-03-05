@@ -132,12 +132,15 @@
 		});
 
 		function updateSearch(){
+			var url = window.location.pathname;
+			url = url.substring(url.lastIndexOf('/')+1);
 			console.log(document.getElementById('searchBar').value );
 			$.ajax({
 				url: './php/search.php',
 				type: 'POST',
 				data: {
-					"search": ''+document.getElementById('searchBar').value
+					"search": ''+document.getElementById('searchBar').value,
+					"page": '"'+ url+window.location.hash+ '"'
 				},
 				success: function(data) {
 					console.log($("#results"));

@@ -70,7 +70,8 @@
 				url: './php/search.php',
 				type: 'POST',
 				data: {
-					"search": ''+document.getElementById('searchBar').value
+					"search": ''+document.getElementById('searchBar').value,
+					"page": '"'+ url+window.location.hash+ '"'
 				},
 				success: function(data) {
 					console.log($("#results"));

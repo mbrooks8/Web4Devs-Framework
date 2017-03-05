@@ -1,5 +1,6 @@
 <?php
 $searched = $_POST["search"];
+$page = $_POST["page"];
 include("./connect.php");
 
 if ($conn->connect_error) {
@@ -46,7 +47,7 @@ for ($i = 0; $i < sizeof($words); $i++) {
 
 }
 
-$sql = 'SELECT page, strippedContent FROM `content` '.$where;
+$sql = 'SELECT page, strippedContent FROM `content` '.$where.' and `page` != '.$page;
 $result = $conn->query($sql);
 echo "<ul>";
 if ($result->num_rows > 0) {
@@ -76,7 +77,6 @@ if ($result->num_rows > 0) {
 				$dispString = $dispString."...";
 			}
 			echo "<li><a href='./".$row["page"]."'>".$dispString."</a></li>";
-
 		}else{
 			echo "<li><a href='./".$row["page"]."'>".$row["strippedContent"]."</a></li>";
 		}
