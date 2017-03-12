@@ -1,0 +1,110 @@
+<div class="banner small">
+    <div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+    <div class="valign content">
+        <div class="container">
+            <h1 class="white-text">Getting Started</h1>
+            <p>Coming Soon, adding features, and completing documentation</p>
+        </div>
+    </div>
+
+    <a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+</div>
+<div class="container">
+    <br>
+    <h3 id="download">setup</h3>
+    <p>
+
+        To get started with the web4dev content manager you need to have the proper tools on your server as well as our content manager js and php files.
+    </p>
+
+    <h5 class="primary">What you need</h5>
+    <ul>
+        <li><a href="https://www.digitalocean.com/">A Server</a></li>
+        <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu">LAMP stack</a></li>
+        <li><a href="https://code.jquery.com/">jQuery (tested on 3.1.1)</a></li>
+        <li><a href="http://fontawesome.io/get-started/">Font Awesome</a></li>
+        <!--         <li><a href="#download">Web4Dev CM</a></li>-->
+
+    </ul>
+    <h5 class="primary">But wait there's more</h5>
+    <p>There are a couple files that need to be updated by you so we can do everything we need to do. The following files need to be updated to allow our framework to make the necessary changes:</p>
+    <ol>
+
+        <li>connect.php</li>
+        <li>isLogged.php</li>
+    </ol>
+    <h5 class="primary">connect.php</h5>
+    <p>connect.php is a typical mySQL connection file. It needs to know your database info in order to log in, and update conent.</p>
+    <pre class=" language-php"><code>&lt;?php
+$id = $_GET["id"];
+$content = $_GET["content"];
+
+$servername = "localhost";
+$username = "root";
+$password = ""; //This is what you need to change
+$dbname = "druplicate";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+?></code></pre>
+    <h5 class="primary">isLogged.php</h5>
+    <p>We need some information about the user.<br>
+        We need to know if the current user has permissions to edit the websites content. In the if statement you must set the conditions that allow a user to edit the page. This function will be used to ensure that only users with the correct permissions are able to edit content.</p>
+    <pre class=" language-php"><code>&lt;?php
+function isLogged(){
+    session_start();
+    if(isset($_SESSION['username']))//an example using a session variable
+    {
+        return 1;
+    }
+    return 0;
+}
+?></code></pre>
+    <h5 class="primary">What you downloaded</h5>
+    <pre class="language-html"><code>web4dev/
+-  css/
+- - poverty.css
+- js/
+- - editContent.js
+- - loadContent.js
+- php/
+- - connect.php
+- - getContent.php
+- - getUser.php
+- - isLogged.php
+- - updateContent.php</code></pre>
+    <h4>Quick Setup</h4>
+    <pre class="language-html"><code>&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+        &lt;title>Page Title&lt;/title>
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        &lt;link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        &lt;link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    &lt;/head>
+    &lt;body>
+        &lt;h1 class="editable" id="testinging">Heading&lt;/h1>
+        &lt;p>paragraph&lt;/p>
+    &lt;/body>
+    &lt;script src="./js/jquery-3.1.1.min.js">&lt;/script>
+    &lt;script src="./js/loadContent.js">&lt;/script>
+&lt;/html></code></pre>
+</div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l8 s12">
+                <h5 class="white-text">4Dev</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2017 Copyright 4Dev All Rights Reserved
+            <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/estebanmagallonperez/">Please Hire Us</a>
+        </div>
+    </div>
+</footer>
+

@@ -6,18 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
         <link href="./css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
+        <link href="css/prism.css" rel="stylesheet" />
     </head>
     <style>
-
-        .sidebar-fixed
+        body
         {
-            position: fixed;
-            left: 0;
+            max-width: 100vw;
+            margin: 0px;
         }
-        .content
+        .sidebar
         {
-            position: relative;
+            transition:left 0.5s ease;
+        }
+        .site-content.fixed
+        {
+            transition:margin-left 0.5s ease;
+        }
+        @media screen and (min-width: 680px) {
+            .active
+            {
+
+            }
+            .sidebar.fixed
+            {
+                position: fixed;
+                width:245px;
+                background: grey;
+                left: 0px;
+            }
+            .site-content.fixed
+            {
+                margin-left: 245px;
+
+            }
+        }
+        @media screen and (max-width: 680px) {
+            .active
+            {
+                left:0px !important;
+            }
+            .sidebar.fixed
+            {
+                position: fixed;
+                width:245px;
+                left:-245px;
+            }
+            .site-content.fixed
+            {
+            }
         }
     </style>
     <body>
@@ -44,7 +80,7 @@
                 </ul>
             </div>
         </div>
-        <div class="site-content">
+        <div class="site-content fixed" style="">
             <div class="banner small">
                 <div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
                 <div class="valign content">
@@ -56,10 +92,12 @@
 
                 <a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
             </div>
-            <a class="sideToggle button raised">click me</a>
 
             <div class="container">
                 <br>
+                <!--            <h3 id="download">download</h3>
+<p>This is everything that you will ever need</p>
+<a class="button raised" href="#!">Web4Dev CM</a>-->
                 <h3 id="download">setup</h3>
                 <p>
                     To get started with the web4dev content manager you need to have the proper tools on your server, as well as our content manager js, and php files.
@@ -139,38 +177,25 @@ function isLogged(){
     &lt;script src="./js/loadContent.js">&lt;/script>
 &lt;/html></code></pre>
             </div>
-
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l8 s12">
+                            <h5 class="white-text">4Dev</h5>
+                            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2017 Copyright 4Dev All Rights Reserved
+                        <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/estebanmagallonperez/">Please Hire Us</a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-    <script>
-        window.onload = function() {
-            if($('.sidebar.fixed').length)
-            {
-                $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
-            }
-            $(".sideToggle").click(function(){
-
-                if($('.sidebar.fixed').length)
-                {
-                    if($('.sidebar.fixed').is('.hidden'))
-                    {
-                        $('.sidebar.fixed').removeClass('hidden');
-                        $('.sidebar.fixed').css('left','0px');
-                        $('.site-content').css('margin-left',$('.sidebar.fixed').width()+'px');
-                    }else
-                    {
-                        $('.sidebar.fixed').addClass('hidden');
-                        $('.sidebar.fixed').css('left',-$('.sidebar.fixed').width()+'px');
-                        $('.site-content').css('margin-left','0px');
-                    }
-
-                }else{
-                    $(".sidebar").toggleClass("active");
-                }
-            })
-        };
-    </script>
-
+    <script src="./js/prism.js"></script>
     <script src="./js/loadContent.js"></script>
 </html>

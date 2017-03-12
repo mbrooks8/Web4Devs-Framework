@@ -1,70 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Getting Started</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link href="css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/prism.css" rel="stylesheet" />
-        <style>
-            @media screen and (min-width: 680px) {
-                .container
-                {
-                    width: 660px;
-                }
-            }
-            @media screen and (max-width: 680px) {
-                .container
-                {
-                    margin: 0px auto;
-                    width: calc(100% -20px);;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="banner small">
-            <div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
-            <div class="valign content">
-                <div class="container">
-                    <h1 class="white-text">Web4Dev CM</h1>
-                    <p>Made <span class="secondary">By developers</span> for<span class="secondary"> developers</span></p>
-                </div>
-            </div>
-
-            <a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
-        </div>
-
+<div class="banner small">
+    <div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+    <div class="valign content">
         <div class="container">
-            <br>
-            <!--            <h3 id="download">download</h3>
+            <h1 class="white-text">Web4Dev CM</h1>
+            <p>Made <span class="secondary">By developers</span> for<span class="secondary"> developers</span></p>
+        </div>
+    </div>
+
+    <a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+</div>
+<br>
+<!--            <h3 id="download">download</h3>
 <p>This is everything that you will ever need</p>
 <a class="button raised" href="#!">Web4Dev CM</a>-->
-            <h3 id="download">setup</h3>
-            <p>
-                To get started with the web4dev content manager you need to have the proper tools on your server, as well as our content manager js, and php files.
-            </p>
+<h3 id="download">setup</h3>
+<p>
+    To get started with the web4dev content manager you need to have the proper tools on your server, as well as our content manager js, and php files.
+</p>
 
-            <h5 class="primary">What you need</h5>
-            <ul>
-                <li><a href="https://www.digitalocean.com/">A Server</a></li>
-                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu">LAMP stack</a></li>
-                <li><a href="https://code.jquery.com/">jQuery (tested on 3.1.1)</a></li>
-                <li><a href="http://fontawesome.io/get-started/">Font Awesome</a></li>
-                <!--         <li><a href="#download">Web4Dev CM</a></li>-->
+<h5 class="primary">What you need</h5>
+<ul>
+    <li><a href="https://www.digitalocean.com/">A Server</a></li>
+    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu">LAMP stack</a></li>
+    <li><a href="https://code.jquery.com/">jQuery (tested on 3.1.1)</a></li>
+    <li><a href="http://fontawesome.io/get-started/">Font Awesome</a></li>
+    <!--         <li><a href="#download">Web4Dev CM</a></li>-->
 
-            </ul>
-            <h5 class="primary">But wait there's more</h5>
-            <p>There are a couple files that need to be updated by you so we can do everything that we need to. The following files need to be updated to allow our framework to make the nesessary changes</p>
-            <ol>
+</ul>
+<h5 class="primary">But wait there's more</h5>
+<p>There are a couple files that need to be updated by you so we can do everything that we need to. The following files need to be updated to allow our framework to make the nesessary changes</p>
+<ol>
 
-                <li>connect.php</li>
-                <li>isLogged.php</li>
-            </ol>
-            <h5 class="primary">connect.php</h5>
-            <p>connect.php is a typical mySQL connection file. It needs to know your database info in order to log in, and update conent.</p>
-            <pre class=" language-php"><code>&lt;?php
+    <li>connect.php</li>
+    <li>isLogged.php</li>
+</ol>
+<h5 class="primary">connect.php</h5>
+<p>connect.php is a typical mySQL connection file. It needs to know your database info in order to log in, and update conent.</p>
+<pre class=" language-php"><code>&lt;?php
 $id = $_GET["id"];
 $content = $_GET["content"];
 
@@ -75,10 +47,10 @@ $dbname = "druplicate";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 ?></code></pre>
-            <h5 class="primary">isLogged.php</h5>
-            <p>We need some information about the user.<br>
-                We need to know if the current user has permissions to edit the websites content. In the if statement you must set the conditions that allow a user to edit the page. This function will be used to ensure that only users with the correct permissions are able to edit content.</p>
-            <pre class=" language-php"><code>&lt;?php
+<h5 class="primary">isLogged.php</h5>
+<p>We need some information about the user.<br>
+    We need to know if the current user has permissions to edit the websites content. In the if statement you must set the conditions that allow a user to edit the page. This function will be used to ensure that only users with the correct permissions are able to edit content.</p>
+<pre class=" language-php"><code>&lt;?php
 function isLogged(){
     session_start();
     if(isset($_SESSION['username']))//an example using a session variable
@@ -88,8 +60,8 @@ function isLogged(){
     return 0;
 }
 ?></code></pre>
-            <h5 class="primary">What you downloaded</h5>
-            <pre class="language-html"><code>web4dev/
+<h5 class="primary">What you downloaded</h5>
+<pre class="language-html"><code>web4dev/
 -  css/
 - - poverty.css
 - js/
@@ -101,8 +73,8 @@ function isLogged(){
 - - getUser.php
 - - isLogged.php
 - - updateContent.php</code></pre>
-            <h4>Quick Setup</h4>
-            <pre class="language-html"><code>&lt;!DOCTYPE html>
+<h4>Quick Setup</h4>
+<pre class="language-html"><code>&lt;!DOCTYPE html>
 &lt;html>
     &lt;head>
         &lt;title>Page Title&lt;/title>
@@ -119,7 +91,5 @@ function isLogged(){
     &lt;script src="./js/jquery-3.1.1.min.js">&lt;/script>
     &lt;script src="./js/loadContent.js">&lt;/script>
 &lt;/html></code></pre>
-        </div>
-    </body>
-    <script src="./js/prism.js"></script>
-</html>
+
+

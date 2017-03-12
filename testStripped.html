@@ -8,7 +8,6 @@
 		<link href="./css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-		<link href="css/prism.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="sidebar fixed" id="side">
@@ -24,7 +23,7 @@
 						<div>
 							<input autocomplete="off" type="text" name="search" id="searchBar">
 							<!--<div class="sideBody" id="results">
-</div>-->
+							</div>-->
 						</div>
 					</li>
 					<li>
@@ -45,82 +44,16 @@
 				</ul>
 			</div>
 		</div>
-		<div class="site-content fixed" style="" id="replace">
+		<div class="site-content fixed">
+			<div class="editable" id ="asdfasdfasdfffffffffffff"><div>hello</div><a>test</a> </div>
 		</div>
+
 	</body>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-	<script src="./js/prism.js"></script>
-	<script>
-		function updatePage(data)
-		{
-			var $target = $('html,body');
-			$target.animate({scrollTop: 0}, 0);
-			$("#replace").html(data);
-			$("#replace").fadeIn(401);
-			Prism.highlightAll();
-			var editables = $("ul.editable,ol.editable,h1.editable,h2.editable,h3.editable,h4.editable,h5.editable,h6.editable,p.editable,div.editable");
-			editables.each(function(){
-				getContent($(this));
-			});
-		}
-		function updateContent(bttnClick)
-		{
-			console.log("updating with: "+window.location.hash);
-			var hash = window.location.hash;
-			if(bttnClick){
-				if(hash =='#'||hash=="#!")
-				{
-					return 0;
-				}
-			}else
-			{
-				if(hash == "#!")
-				{
-					history.go(-1);
-					updateContent(true);
-				}
-			}
-			if(hash =='')
-			{
-				hash = 'welcome';
-			}else{
-				hash = hash.substr(1);
-			}
-			$.ajax(
-				{url:'./pages/'+hash+'.html',
-				 success:function(data){
-
-					 $("#replace").fadeOut(401);
-					 setTimeout(function(){updatePage(data);},400);
-				 },
-				 error:function(){
-					 $.ajax(
-						 {url:'./pages/error.html',
-						  success:function(data){
-							  $("#replace").fadeOut(401);
-							  setTimeout(function(){updatePage(data);},400);
-						  }
-						 })}
-				});
-		}
-
-		window.onhashchange = function(){
-			updateContent(true);
-		};
-		window.onload = function() {
-			console.log("loaded");
-
-			$(".sideToggle").click(function(){
-				$(".sidebar").toggleClass("active");
-			});
-
-		};
-		updateContent(false);
-	</script>
 	<script>
 
 		$( "#searchBar" ).parent().focusin(function() {
-			$( this ).parent().append("<div class=\"card\"style=\"margin:0px;width:100%;overflow-y:scroll;position:absolute;max-height:200px;z-index:10000;\" class=\"sideBody\" id=\"results\"></div>");
+			$( this ).parent().append("<div class=\"card\"style=\"width:95%;overflow-y:scroll;margin:auto;position:absolute;height:200px;z-index:10000;\" class=\"sideBody\" id=\"results\"></div>");
 			updateSearch()
 		});
 		$("#searchBar").parent().focusout(function(){
@@ -132,8 +65,6 @@
 		});
 
 		function updateSearch(){
-			var url = window.location.pathname;
-			url = url.substring(url.lastIndexOf('/')+1);
 			console.log(document.getElementById('searchBar').value );
 			$.ajax({
 				url: './php/search.php',

@@ -1,0 +1,136 @@
+<div class="banner small">
+	<div style="position:absolute; background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5),rgba(0,0,0,0)); height:100%; width:100%;"></div>
+	<div class="valign content">
+		<div class="container">
+			<h1 class="white-text">Nav Bars</h1>
+			<p>Made <span class="secondary">By developers</span> for<span class="secondary"> developers</span></p>
+		</div>
+	</div>
+	<div class="imgDiv"style="background: url(https://wallpaperscraft.com/image/vancouver_night_panorama_87255_2560x1080.jpg)"></div>
+
+	<a class="button floating"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+</div>
+<div class="container">
+	<br>
+	<p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
+	<br>
+	<div class="col s12">
+		<p>There are two types of sidebars</p>
+		<ul class="" id="bannerList1">
+			<li>Fixed sidebar: a sidebar that is fixed, and shifts the content to fit in the remaining space</li>
+			<li>Sidebar: A sidebar which is by default hidden, but which can be toggles by pressing an assigned button on the screen</li>
+		</ul>
+	</div>
+	<p>A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it.</p>
+	<br>
+	<div class="row">
+		<div class="col s12 m12 l6">
+			<div style="height:450px; background-color:#EEEEEE; position:relative;">
+				<div class="sidebar" id="side" style="height:100%; position:absolute;left:0px !important;">
+					<div class="sideHeader" style="text-align:center;">
+
+					</div>
+					<div class="sideBody">
+						<ul class="sideToggle">
+							<li>
+								<a href="#!">Link</a>
+							</li>
+							<li>
+								<a href="#!">Link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div style="margin-left:245px;height:100%;">
+					<div class="banner" style="min-height:30% !important; height:30% !important;">
+						<a style="height:30px; width:30px; bottom:-15px!important;" class="button floating"></a>
+					</div>
+
+					<div class="card " style="width:90%;margin:20px auto; height:20%;"></div>
+					<div class="card " style="width:90%;margin:20px auto; height:20%;"></div>
+				</div>
+			</div>
+
+			<p class="black-text" id="bannerfloatingbutton">Fixed Sidebar</p>
+		</div>
+		<div class="col s12 m12 l6">
+			<div style="height:450px; background-color:#EEEEEE; position:relative;overflow:hidden;">
+				<script>
+					function miniToggle(){
+						$("#miniSide").toggleClass("active");
+					}
+				</script>
+				<div style="position:absolute;left:15px;top:10px;z-index:1000000;" ><a href="#!" onclick="miniToggle()"><i class="white-text fa fa-bars" aria-hidden="true"></i></a></div>
+				<div class="sidebar" id="miniSide" style="height:100%; position:absolute;">
+					<div class="sideHeader" style="text-align:center;">
+
+					</div>
+					<div class="sideBody">
+						<ul class="sideToggle" onclick="miniToggle()">
+							<li>
+								<a href="#!">Link</a>
+							</li>
+							<li>
+								<a href="#!">Link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div style="height:100%;">
+					<div class="banner" style="min-height:30% !important; height:30% !important;">
+						<a style="height:30px; width:30px; bottom:-15px!important;" class="button floating"></a>
+					</div>
+
+					<div class="card " style="width:90%;margin:20px auto; height:20%;"></div>
+					<div class="card " style="width:90%;margin:20px auto; height:20%;"></div>
+				</div>
+			</div>
+
+			<p class="black-text" id="bannerfloatingbutton">Sidebar</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col l3 m12">
+			<p>fixed sidebar will be visible on all screen sizes except for small, when it hides you can toggle it with any button contaianing the class sideToggle</p>
+		</div>
+		<div class="col l9 m12">
+			<pre class="language-html"><code>&lt;body>
+	&lt;div class="sidebar fixed" id="side">
+		&lt;div class="sideHeader" style="text-align:center;">
+			&lt;div class="sideHeader" style="text-align:center;">
+				&lt;h3 class="white-text">Title&lt;/h3>
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="sideBody">
+			&lt;ul >
+				&lt;li>&lt;a href="#">LinkName&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+	&lt;/div>
+	&lt;!--The div with the site-content class gets the fixed class when using the fixed sidebar to set appropriate scaling-->
+	&lt;div class="site-content fixed" style="" id="replace">
+	&lt;/div>
+&lt;/body></code></pre>
+		</div>
+	</div>
+
+
+
+
+</div>
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col l8 s12">
+				<h5 class="white-text">4Dev</h5>
+				<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© 2017 Copyright 4Dev All Rights Reserved
+			<a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/estebanmagallonperez/">Please Hire Us</a>
+		</div>
+	</div>
+</footer>

@@ -36,10 +36,17 @@ session_start();
 					<li>
 						<a href="./example.html">Getting Started</a>
 					</li>
+					<li><a href="./banner.php">Banner</a></li>
 					<li>
 						<a href="./button.php">Button</a>
 					</li>
-					<li><a href="./banner.php">Banner</a></li>
+					<li><a href="./card.php">card</a></li>
+					<li><a href="./chip.php">chip</a></li>
+					<li><a href="./color.php">color</a></li>
+					<li><a href="./navbar.php">navbar</a></li>
+					<li><a href="./table.php">table</a></li>
+					<li><a href="./template.php">template</a></li>
+					<li><a href="./utility.php">utility</a></li>
 				</ul>
 			</div>
 		</div>
