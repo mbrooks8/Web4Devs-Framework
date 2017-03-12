@@ -133,7 +133,7 @@ include("./php/template/topNav.php");
 		</div>
 <br>
 		<div class="row">
-			<div class="col s12 m4">
+			<div class="col s12 l4">
 				<h5 class="primary center editable" id="buttonChoosingButtonSTyle">Choosing Button Style</h5>
 				<br>
 				<p class="editable" id="buttonGroup4">Choosing a button style depends on the primacy of the button, the number of containers on screen, and the screen layout.</p>
@@ -145,7 +145,7 @@ include("./php/template/topNav.php");
 				<p class="editable" id="buttonGroup1"><b>Layout:</b> Use primarily one type of button per container. Only mix button types when you have a good reason to, such as emphasizing an important function.</p>
 
 			</div>
-			<div class="col s12 m8">
+			<div class="col s12 l8">
 				<div class="card flat">
 					<img class="responsive-img" src="https://storage.googleapis.com/material-design/publish/material_v_10/assets/0Bx4BSt6jniD7RHFUU2dFdmMtcm8/components_buttons_usage_main.png">
 				</div>
@@ -155,14 +155,14 @@ include("./php/template/topNav.php");
 		<div class="divider"></div>
 		<br>
 		<div class="row">
-			<div class="col s12 m4">
+			<div class="col s12 l4">
 				<h5 class="primary center editable" id="buttonUsage">Usage</h5>
 				<br>
 				<p><b>Button Types</b></p>
 				<br>
 				<p>The type of button used should be suited to the context in which it appears.</p>
 			</div>
-			<div class="col s12 m8">
+			<div class="col s12 l8">
 				<table class="bordered highlight">
 					<thead>
 						<tr>
