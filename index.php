@@ -11,7 +11,7 @@
 		<link href="css/prism.css" rel="stylesheet" />
 
 		<!--Google SHit-->
-				<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<meta name="google-signin-client_id" content="413698421344-c39mjtvkgs6svj4nipudj61uflfsjr31.apps.googleusercontent.com">
 		<!--end google shit-->
 	</head>
@@ -54,6 +54,12 @@
 							var auth2 = gapi.auth2.getAuthInstance();
 							auth2.signOut().then(function () {
 								console.log('User signed out.');
+							});
+						}
+
+						function onLoad() {
+							gapi.load('auth2', function() {
+								gapi.auth2.init();
 							});
 						}
 					</script>

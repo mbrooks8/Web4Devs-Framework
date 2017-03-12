@@ -98,7 +98,6 @@
 						xhr.open('POST', './googleSessionManager.php');
 						xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 						xhr.onload = function() {
-							console.log(xhr.responseText);
 							if (xhr.responseText=="success"){
 								window.location = "http://web4devs.com/";
 							}else{
