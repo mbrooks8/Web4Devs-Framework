@@ -42,7 +42,8 @@
 					<li><a href="#table">Table</a></li>
 					<li><a href="#template">Template</a></li>
 					<li><a href="#utility">Utility</a></li>
-					<a href="#" onclick="signOut();">Sign out</a>
+					<li><a href="http://web4devs.com/php/login.php">Login</a></li>
+					<li><a href="#" onclick="signOut();">Sign out</a></li>
 					<script>
 						function signOut() {
 							var auth2 = gapi.auth2.getAuthInstance();

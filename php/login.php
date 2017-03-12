@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 		<title>Starter Template - Poverty</title>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<meta name="google-signin-client_id" content="413698421344-c39mjtvkgs6svj4nipudj61uflfsjr31.apps.googleusercontent.com">
 
 		<!-- CSS  -->
@@ -73,9 +73,9 @@
 		<div class="banner valign" style="min-height:100vh;height: 100vh !important;">
 			<div class="card center" style="background-color:rgba(0,0,0,0.2);color:white;">
 
-					<div  style="width:30%;display:inline-block;">
-						<?php include("../img/icon.html"); ?>
-					</div>
+				<div  style="width:30%;display:inline-block;">
+					<?php include("../img/icon.html"); ?>
+				</div>
 
 				<form action="./sessionManager.php" method="POST">
 					<br>
@@ -89,6 +89,15 @@
 					</div>
 				</form>
 				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				<script>
+					function onSignIn(googleUser) {
+						var profile = googleUser.getBasicProfile();
+						console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+						console.log('Name: ' + profile.getName());
+						console.log('Image URL: ' + profile.getImageUrl());
+						console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+					}
+				</script>
 			</div>
 		</div>
 	</body>
