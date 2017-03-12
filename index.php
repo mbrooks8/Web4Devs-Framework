@@ -57,11 +57,11 @@
 							});
 						}
 
-						function onLoad() {
-							gapi.load('auth2', function() {
-								gapi.auth2.init();
-							});
-						}
+
+						gapi.load('auth2', function() {
+							gapi.auth2.init();
+						});
+
 					</script>
 				</ul>
 			</div>
