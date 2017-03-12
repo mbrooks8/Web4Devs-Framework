@@ -9,6 +9,11 @@
 		<script src="./js/poverty.js" async></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 		<link href="css/prism.css" rel="stylesheet" />
+
+		<!--Google SHit-->
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="413698421344-c39mjtvkgs6svj4nipudj61uflfsjr31.apps.googleusercontent.com">
+		<!--end google shit-->
 	</head>
 	<body>
 		<div class="sidebar fixed" id="side">
