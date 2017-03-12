@@ -4,6 +4,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 		<title>Starter Template - Poverty</title>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="413698421344-c39mjtvkgs6svj4nipudj61uflfsjr31.apps.googleusercontent.com">
 
 		<!-- CSS  -->
 		<link href="../css/poverty.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -86,6 +88,7 @@
 						<input class="button raised" type="submit" value="login">
 					</div>
 				</form>
+				<div class="g-signin2" data-onsuccess="onSignIn"></div>
 			</div>
 		</div>
 	</body>
